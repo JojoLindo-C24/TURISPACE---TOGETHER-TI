@@ -6,7 +6,7 @@ body{margin: 0px}
 .container{
     height: 100vh;
     width: 100vw;
-    background-image: url(../../react/tcc/public/assets/images/sao_paulo\ 1.png);
+    background-image: url('../../react/tcc/public/assets/images/sao_paulo1.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
