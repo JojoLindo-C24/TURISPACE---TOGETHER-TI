@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const EsqueceuSenha = styled.div`
     justify-content: center;
-    margin-left: 50px;
 
 .cabecalho{
     display: flex;
