@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Login from './pages/login'
 import GlobalFonts from './fonts/fonts'
+import Routes from './routes'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Login /> <GlobalFonts/>
+    <Routes/> <GlobalFonts/>
   </React.StrictMode>,
   document.getElementById('root')
 );

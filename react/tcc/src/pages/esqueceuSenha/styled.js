@@ -1,44 +1,27 @@
-body{margin: 0px}
+import styled from "styled-components";
 
-.container{
-    background-color: #041E39;
-    width: 100vw;
-    height: 100vh;
-}
-
-.f1-container{
-    position: absolute;
-    width: 90vw;
-    height: 90vh;
-    margin: 30px 40px 40px 40px;
-    border: 3px solid #1186FF;
-    box-sizing: border-box;
-    border-radius: 26px;
-    margin-left: 70px;
-    background: rgba(66, 100, 187, 0.36);
-}
-
-.conteudo{
+const EsqueceuSenha = styled.div`
     justify-content: center;
-}
+    margin-left: 50px;
 
 .cabecalho{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 320px;
-    margin-top: 130px;
+    margin-left: 300px;
 }
 
 .logo-usuario{
     width: 100px;
     height: 100px;
+    margin-top: 130px ;
 }
 
 .esqueceu-senha{
-    font: 42px Roboto;
+    font: 42px Roboto-Thin;
     color: white;
     margin-left: 35px;
+    margin-top: 130px ;
 }
 
 .linha-email{
@@ -51,7 +34,7 @@ body{margin: 0px}
 .input-email{
     border: none;
     background-color: transparent;
-    font: 22px Roboto;
+    font: 22px Roboto-Light;
     color: white;
     margin-left: 300px;
     margin-top: 50px;
@@ -61,10 +44,12 @@ body{margin: 0px}
     background-color: transparent;
     border: 2px solid white;
     border-radius: 18px;
-    font: 24px Roboto;
+    font: 24px Roboto-Thin;
     color: white;
     padding: 10px 40px 10px 40px;
     margin-left: 550px;
     margin-top: 100px;
     cursor: pointer;
 }
+`
+export {EsqueceuSenha};
