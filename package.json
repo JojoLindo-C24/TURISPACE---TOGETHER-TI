@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/LucianeC/TuriSPace.TCC/issues"
   },
-  "homepage": "https://github.com/LucianeC/TuriSPace.TCC#readme"
+  "homepage": "https://github.com/LucianeC/TuriSPace.TCC#readme",
+  "dependencies": {
+    "react-router-dom": "^5.3.0",
+    "styled-components": "^5.3.1"
+  }
 }
