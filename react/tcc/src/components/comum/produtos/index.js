@@ -7,10 +7,14 @@ export default function Pacotes(props) {
             <div className="bloco">
                 <img className="imagem" src={props.info.imagem} alt="" />
                 <div className="conteudo">
-                    <div className="top-cont">
-                        <div className="titulo"> {props.info.titulo} </div>
+                    <div className="top-cont">   
+                        <div className="linha-top-cont">
+                            <div className="linha-cont"></div>
+                            <div className="titulo"> {props.info.titulo} </div>
+                        </div>
                         <div className="componentes"> {props.info.componentes} </div>
                     </div>
+                    <br></br>
                     <div className="middle-cont">
                         <div className="preco"> {props.info.preco} </div>
                         <Link to={{
@@ -20,6 +24,8 @@ export default function Pacotes(props) {
                             <button className="bt-compra"> <img className="img-compra" src={"../../assets/images/compra.svg"}/> </button>
                         </Link>
                     </div>
+                    <br></br>
+                    <br></br>
                     <Link to={{
                         pathname: '/detalhePacote',
                         state: props.info

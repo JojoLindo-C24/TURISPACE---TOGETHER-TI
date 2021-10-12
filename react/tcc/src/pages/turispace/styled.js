@@ -6,8 +6,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 3em;
   background-image: url(${BackgroundInitial});
+  align-items: center;
 
 .bt-listar{
     border: none;
@@ -26,6 +26,25 @@ const Container = styled.div`
 
 .Sejam-Bem-Vindos{
     font: 48px Montserrat-Medium;
+}
+
+.Turispace{
+
+}
+
+.Turispace-subtitulo{
+    font: 44px Montserrat-SemiBold;
+    color:  #17324A;
+    text-align: center;
+}
+
+.Turispace-promocoes{
+    font: 40px Montserrat-SemiBold;
+    color: white;
+    background-color: rgba(0, 5, 32, 0.85);
+    width: 100vw;
+    padding: 1em 0em 1em 0em;
+    text-align: center;
 }
 `
 export {Container}

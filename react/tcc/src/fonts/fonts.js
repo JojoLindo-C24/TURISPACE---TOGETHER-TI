@@ -6,6 +6,7 @@ import MontserratMedium from './Montserrat-Medium.woff2';
 import OpenSansExtraBold from './OpenSans-ExtraBold.woff2'
 import OpenSansBold from './OpenSans-Bold.woff2'
 import Roboto from './Roboto-Medium.woff2'
+import MontserratSemiBold from './Montserrat-SemiBold.woff2'
 
 export default createGlobalStyle`
     @font-face {
@@ -48,6 +49,12 @@ export default createGlobalStyle`
         font-family: Roboto;
         src: url(${Roboto}) format('woff2');
         font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Montserrat-SemiBold;
+        src: url(${MontserratSemiBold}) format('woff2');
+        font-weight: 700;
         font-style: normal;
     }
 `

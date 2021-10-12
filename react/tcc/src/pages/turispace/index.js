@@ -52,7 +52,10 @@ export default function Home() {
     return(
         <Container>
             <CabecalhoInWhite></CabecalhoInWhite>
-            <h1 className="Sejam-Bem-Vindos"> Sejam bem-vindos ao TuriSPace! </h1> <br/>
+            <img className="Turispace" src={"../../assets/images/Turispace 1.png"}/>
+            <div className="Turispace-subtitulo">Compre já seu pacote, e deixe suas<br></br> férias garantidas</div>
+            <div className="Turispace-promocoes">Promoções da Temporada</div>
+            <br></br>
             <button className="bt-listar" onClick={listar}>Listar Promoções</button>
             <div className="lista-produtos">
                 {produtos.map(item => 

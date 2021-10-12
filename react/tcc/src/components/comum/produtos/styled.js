@@ -4,7 +4,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 2em;
-  box-shadow: 0px 0px 8px 5px #c4c4c4;
   align-items: center;
   border-radius: 20px;
 
@@ -25,7 +24,7 @@ const Container = styled.div`
 .conteudo{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: right;
     padding: 2em 0em 2em 2em;
 }
 .titulo{
@@ -40,17 +39,19 @@ const Container = styled.div`
     font: 400 26px Roboto;
     color: white;
     font-weight: bold;
+    margin-right: 20px;
+    margin-top: 7px;
 }
 
 .mais-info{
     border: none;
     border-radius: 7px;
-    font: 400 16px Open Sans;
+    font: 400 22px Roboto-Thin;
     color: white;
     background-color: transparent;
     cursor: pointer;
 }
-.mais-info :hover{
+.mais-info:hover{
     text-decoration: underline;
 }
 
@@ -77,6 +78,19 @@ const Container = styled.div`
     height: 30px;
     width: auto;
     margin: 0px 10px 0px 10px;
+}
+
+.linha-top-cont{
+    display: flex;
+    flex-direction: row;
+}
+
+.linha-cont{
+    background-color: white;
+    width: 7px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 `
 export {Container};
