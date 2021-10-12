@@ -39,5 +39,3 @@ export default function IndexCabecalhoInWhite() {
         </CabecalhoInWhite>
     )
 }
-
-{/* INÍCIO - LUGARES - CATEGORIAS - FALE CONOSCO - MEUS PACOTES - MINHA CONTA  */}

@@ -4,7 +4,7 @@ const Cadastro = styled.div`
 .Container{
     height: 100vh;
     width: 100vh;
-    background-image: url(${'/assets/images/construcoes1.png'});
+    background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
 }
