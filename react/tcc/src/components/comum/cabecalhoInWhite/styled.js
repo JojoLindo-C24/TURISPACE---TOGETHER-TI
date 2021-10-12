@@ -8,6 +8,7 @@ background-color: #c4c4c4; //Só pra aparecer as letras, quando for inserir no s
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .botao-cabecalho{

@@ -7,7 +7,7 @@ export default function IndexCabecalhoInDark() {
         <CabecalhoInDark>
             <div class="Cabecalho">
                 <div class="f1-Cabecalho">
-                    <div class="Logo"> <img src={"../../assets/images/logo1.svg"} alt=""/> </div>
+                    <div class="Logo"> <img src={"../../assets/images/logo1.svg"} className="logo" alt=""/> </div>
                     <Link to={{
                         pathname: '/'
                     }}>
@@ -31,9 +31,8 @@ export default function IndexCabecalhoInDark() {
                     <Link to={{
                         pathname: '/minhaConta'
                     }}>
-                        <button className='botao-cabecalho'> MINHA CONTA </button>   
+                            <button className='botao-cabecalho'> MINHA CONTA </button>   
                     </Link>
-                    <div class="Conta"> <img src={"../../assets/images/usuario1.svg"} alt=""/> </div>
                 </div>
             </div>
         </CabecalhoInDark>
