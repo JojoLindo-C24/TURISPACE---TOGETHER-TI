@@ -43,6 +43,24 @@ export default function Home() {
             preco: "R$ 160,00",
             descricao: "Esse produto é muito legal e você deve comprá-lo porque sua vida será feliz!!!",
             botao: "../../../public/assets/images/compra(1).svg"
+          },
+          {
+            id: 5,
+            imagem: "https://blog.hopihari.com.br/wp-content/uploads/2021/01/hopi-hari-hora-de-agradecer-profissionais-de-saude.jpg",
+            titulo: "Hopi Hari",
+            componentes: "- 2 ingressos",
+            preco: "R$ 160,00",
+            descricao: "Esse produto é muito legal e você deve comprá-lo porque sua vida será feliz!!!",
+            botao: "../../../public/assets/images/compra(1).svg"
+          },
+          {
+            id: 6,
+            imagem: "https://blog.hopihari.com.br/wp-content/uploads/2021/01/hopi-hari-hora-de-agradecer-profissionais-de-saude.jpg",
+            titulo: "Hopi Hari",
+            componentes: "- 2 ingressos",
+            preco: "R$ 160,00",
+            descricao: "Esse produto é muito legal e você deve comprá-lo porque sua vida será feliz!!!",
+            botao: "../../../public/assets/images/compra(1).svg"
           }
         ]
     
