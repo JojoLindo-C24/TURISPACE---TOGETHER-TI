@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { Cadastro } from "./styled";
 
 import { IndexRodape } from "../../components/comum/rodape/index";
@@ -23,8 +25,16 @@ export default function Index() {
                             <div class="cadastrar">Cadastre-se</div>
                             <input class="input-email" type="text" placeholder="Insira seu e-mail"/>
                             <input class="input-senha" type="text" placeholder="Insira sua senha"/>
-                            <button class="botao-cadastrar">Cadastrar</button>
-                            <a className="login" href="http://127.0.0.1:5500/html/login/index.html">Já é cadastrado? Login</a>
+                            <Link to={{
+                                pathname: '/'
+                            }}>
+                               <button class="botao-cadastrar">Cadastrar</button>
+                            </Link>
+                            <Link to={{
+                                pathname: '/login'
+                            }}>
+                                <a className="login" href="http://127.0.0.1:5500/html/login/index.html">Já é cadastrado? Login</a>
+                            </Link>
                         </div>
                     </div>
                 </div>

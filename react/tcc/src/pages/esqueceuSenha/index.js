@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { EsqueceuSenha } from "./styled";
 
 import { BackgroundSenha } from "../../components/comum/background-senha/styled";
@@ -16,7 +18,11 @@ export default function Index() {
                     </div>
                     <input class="input-email" type="text" placeholder="Insira o e-mail cadastrado"/>
                     <div class="linha-email"></div>
-                    <button class="botao-esqueceu-senha">Enviar</button>
+                    <Link to={{
+                        pathname: '/codigo'
+                    }}>
+                        <button class="botao-esqueceu-senha">Enviar</button>
+                    </Link>
                 </BackgroundLine>
             </BackgroundSenha>
         </EsqueceuSenha>
