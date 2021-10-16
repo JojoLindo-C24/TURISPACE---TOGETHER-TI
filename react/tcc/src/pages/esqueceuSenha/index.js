@@ -6,8 +6,9 @@ import { BackgroundLine} from "../../components/comum/backgroundLine/styled"
 
 export default function Index() {
     return(
-        <BackgroundSenha>
-            <EsqueceuSenha>
+        
+        <EsqueceuSenha>
+            <BackgroundSenha>
                 <BackgroundLine>
                     <div class="cabecalho">
                         <img src={"../assets/images/icon-login.svg"} alt="" class="logo-usuario"/>
@@ -17,7 +18,7 @@ export default function Index() {
                     <div class="linha-email"></div>
                     <button class="botao-esqueceu-senha">Enviar</button>
                 </BackgroundLine>
-            </EsqueceuSenha>
-        </BackgroundSenha>
+            </BackgroundSenha>
+        </EsqueceuSenha>
     )
 }

@@ -24,7 +24,7 @@ export default function Index() {
                             <input class="input-email" type="text" placeholder="Insira seu e-mail"/>
                             <input class="input-senha" type="text" placeholder="Insira sua senha"/>
                             <button class="botao-cadastrar">Cadastrar</button>
-                            <button class="login">  <a href="http://127.0.0.1:5500/html/login/index.html">Já é cadastrado? Login</a> </button>
+                            <a className="login" href="http://127.0.0.1:5500/html/login/index.html">Já é cadastrado? Login</a>
                         </div>
                     </div>
                 </div>

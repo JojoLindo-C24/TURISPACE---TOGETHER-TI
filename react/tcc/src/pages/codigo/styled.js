@@ -1,19 +1,20 @@
 import styled from "styled-components";
 
 const Codigo = styled.div`
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
 .digite-codigo{
     font: 28px Roboto-Thin;
     color: white;
-    margin-top: 170px;
-    margin-left: 400px;
+    margin-top: 150px;
 }
 
 .codigo{
     display: flex;
     flex-direction: row;
-    margin-left: 360px;
     margin-top: 100px;
 }
 

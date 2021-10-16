@@ -70,7 +70,7 @@ export default function Home() {
     return(
         <Container>
             <CabecalhoInWhite></CabecalhoInWhite>
-            <img className="Turispace" src={"../../assets/images/Turispace 1.png"}/>
+            <img className="Turispace" src={"../../assets/images/Turispace 1.png"} alt=""/>
             <div className="Turispace-subtitulo">Compre já seu pacote, e deixe suas<br></br> férias garantidas</div>
             <div className="Turispace-promocoes">Promoções da Temporada</div>
             <br></br>

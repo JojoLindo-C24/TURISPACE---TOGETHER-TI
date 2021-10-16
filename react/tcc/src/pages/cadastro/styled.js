@@ -1,24 +1,32 @@
 import styled from "styled-components";
 
+import Fundo from "../../assets/images/construcoes1.png"
+
 const Cadastro = styled.div`
 .Container{
     height: 100vh;
-    width: 100vh;
-    background-image: url();
+    width: 100vw;
+    background-image: url(${Fundo});
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .f1-container{
     position: absolute;
-    width: 93vw;
+    width: 95vw;
     height: 95vh;
-    margin: 10px;
     background: rgba(255, 255, 255, 0.1);
     border: 6px solid rgba(15, 109, 210, 0.8);
     box-sizing: border-box;
-    border-radius: 26px;
-    margin-left: 35px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .titulo{
@@ -29,15 +37,12 @@ const Cadastro = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .conteudo-esquerda{
     background-color:  rgba(4, 30, 57, 0.85);
-    height: auto;
-    width: 13em;
-    padding: 2em 3em 2em 3em;
-    width: 562.57px;
-    height: 290px;
+    padding: 1em 2em 1em 2em;
 }
 
 .CE-faixa1 {
@@ -51,6 +56,7 @@ const Cadastro = styled.div`
 .CE-faixa2{
     font: 500 20px Montserrat-Medium;
     color: white;
+    width: 45vw;
 }
 
 .CE-faixa3{
@@ -118,8 +124,6 @@ const Cadastro = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
-    height: 290px;
     background-color: rgba(4, 30, 57, 0.85);
     padding: 2em 3em 2em 3em;
     margin: 0px 0px 0px 70px;
@@ -127,7 +131,7 @@ const Cadastro = styled.div`
 
 .logo {
     width: auto;
-    height: 185px;
+    height: auto;
 }
 
 .cadastrar{
@@ -167,6 +171,11 @@ a{
     cursor: pointer;
 }
 
+.botao-cadastrar:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+}
+
 .login{
     font: 15px Rosario-semiBold;
     color: white;
@@ -174,6 +183,11 @@ a{
     border: none;
     margin-top: 10px;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.login:hover{
+    text-decoration: underline;
 }
 `
 export {Cadastro};

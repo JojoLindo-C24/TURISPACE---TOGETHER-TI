@@ -6,7 +6,7 @@ const Rodape = styled.div`
     display: flex;
     flex-direction: row;
     height: 130px;
-    width: 98.75vw;
+    width: 100vw;
     justify-content: center;
 }
 

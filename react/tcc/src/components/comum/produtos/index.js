@@ -21,7 +21,7 @@ export default function Pacotes(props) {
                             pathname: '/detalhePacote',
                             state: props.info
                         }}>
-                            <button className="bt-compra"> <img className="img-compra" src={"../../assets/images/compra.svg"}/> </button>
+                            <button className="bt-compra"> <img className="img-compra" src={"../../assets/images/compra.svg"} alt=""/> </button>
                         </Link>
                     </div>
                     <br></br>

@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 const EsqueceuSenha = styled.div`
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
 .cabecalho{
     display: flex;

@@ -9,6 +9,10 @@ const Login = styled.div`
 
 .f1-container{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 95vw;
     height: 95vh;
     margin: 20px;
@@ -20,8 +24,6 @@ const Login = styled.div`
 }
 
 .conteudo{
-    margin-left: 95px;
-    margin-top: 50px;
     width: 1100px;
     height: 460px;
     background-color: rgba(4, 30, 57, 0.91);
