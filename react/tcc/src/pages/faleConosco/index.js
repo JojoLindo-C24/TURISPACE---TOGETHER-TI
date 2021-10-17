@@ -11,7 +11,7 @@ export default function Index() {
                <div className= "Titulo"> Fale Conosco</div>
                <div className= "conteudo">
                     <div className= "Parte1">
-                        <div className= "mapa"> <img class ="mapa" src={"./assents/images/mpa.png"} alt="" ></img></div>
+                        <div className= "mapa"> <img class ="mapa" src={"./assets/images/mapa.png"} alt="" ></img></div>
                         <div className= "cel"> +55 (11) 95247-9539</div>
                         <div className="email"> turiSPace@gmail.com </div>
                     </div>
