@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import BackgroundFaleConosco from "../../assets/images/fundo_fale_conosco.png"
 
 const FaleConosco =  styled.div`
 body{margin: 0px}
@@ -11,7 +12,7 @@ body{margin: 0px}
 .Container
     height: 140vh;
     width: 99,2vw;
-    background-image: url{(assets/images/fundo_fale_conosco.png.png)};
+    background-image: url(${BackgroundFaleConosco});
     background-repeat: no-repeat;
     background-position: center top;
     display: column;
