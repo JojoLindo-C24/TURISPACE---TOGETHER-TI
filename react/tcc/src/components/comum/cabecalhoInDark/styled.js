@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 const CabecalhoInDark = styled.div`
-justify-content: center;
-// background-color: #c4c4c4; //Só pra aparecer as letras, quando for inserir no site tirar o background-color
+    justify-content: center;
+    background-color: rgba(0, 5, 32, 0.85);
+    width: 100%;
+    height: 12vw;
+
 
 .f1-Cabecalho{
     display: flex;
@@ -16,12 +19,12 @@ justify-content: center;
     background-color: transparent;
     font: 20px Montserrat-Medium;
     cursor: pointer;
-    color: #000509;
+    color: white;
     margin-right: 30px;
 }
 
 .logo{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 `
 export {CabecalhoInDark}

@@ -17,6 +17,7 @@ const SobreNos = styled.div `
 
 .Titulo{
     margin: auto;
+    margin-top: 7vh;
     display: flex;
     font-size: 59px;
     justify-content: center;
