@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import Fundo from "../../assets/images/construcoes1.png"
 
 const Cadastro = styled.div`
@@ -18,9 +17,9 @@ const Cadastro = styled.div`
 .f1-container{
     position: absolute;
     width: 95vw;
-    height: 95vh;
+    height:95vh;
     background: rgba(255, 255, 255, 0.1);
-    border: 6px solid rgba(15, 109, 210, 0.8);
+    border: 5px solid rgba(15, 109, 210, 0.8);
     box-sizing: border-box;
     border-radius: 30px;
     display: flex;
