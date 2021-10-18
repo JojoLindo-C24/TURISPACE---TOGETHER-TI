@@ -1,4 +1,5 @@
 import { Rodape } from "./styled";
+import { Link } from "react-router-dom";
 
 export default function IndexRodape() {
     return(
@@ -24,7 +25,12 @@ export default function IndexRodape() {
                 <div class="coluna4">
                     <div class="c4-cima">Suporte</div>
                     <div class="c4-baixo">Politica de Privaciade</div>
-                    <div class="c4-baixo2">Sobre nós</div>
+                    <Link to={{
+                        pathname: '/sobreNos'
+                    }}>
+                        <div className='c4-baixo2'> Sobre nós </div>   
+                    </Link>
+                   
                 </div>
                 <div class="coluna5">
                     <div class="c5-cima">Formas de pagamento</div>

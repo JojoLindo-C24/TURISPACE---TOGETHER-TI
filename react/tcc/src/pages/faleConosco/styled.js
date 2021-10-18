@@ -9,9 +9,9 @@ body{margin: 0px}
 }
 
 
-.Container
+.Container {
     height: 140vh;
-    width: 99,2vw;
+    width: 100vw;
     background-image: url(${BackgroundFaleConosco});
     background-repeat: no-repeat;
     background-position: center top;
@@ -21,7 +21,9 @@ body{margin: 0px}
 }
 
 
-.Titulo{       
+.Titulo{     
+margin: auto;
+justify-content: center;
 color:antiquewhite;
 text-align: center;
 font-size: 50px;

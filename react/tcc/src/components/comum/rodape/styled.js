@@ -78,6 +78,7 @@ const Rodape = styled.div`
 .c4-baixo2{
     cursor: pointer;
     margin-top: 10px;
+    color: white;
 }
 
 .c1-cima{
