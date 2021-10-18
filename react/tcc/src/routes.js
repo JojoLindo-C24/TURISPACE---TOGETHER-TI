@@ -7,6 +7,7 @@ import Codigo from './pages/codigo';
 import Cadastro from './pages/cadastro'
 import DetalhePacotes from "./pages/infoPacote"
 import SenhaNova from './pages/senhaNova';
+import SobreNos from './pages/sobreNos';
 import FaleConosco from './pages/faleConosco';
 
 
@@ -26,6 +27,7 @@ export default function Routes() {
                 <Route path="/detalhePacote" exact={true} component={DetalhePacotes} />
                 <Route path="/novaSenha" exact={true} component={SenhaNova} />
                 <Route path="/faleConosco" exact={true} component={FaleConosco} />
+                <Route path= "/sobreNos" exact={true} component = {SobreNos} />
                 <Route path="/teste" exact={true} component={Teste} />
                 <Route path="/teste2" exact={true} component={Teste2} />
                 {/* <Route path="/teste3" exact={true} component={Teste3} /> */}
