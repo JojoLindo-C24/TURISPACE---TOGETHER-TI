@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const SobreNos = styled.div `
-    height: 110vh;
+    height: 100vh;
     width: 100vw;
-    background-image: url(${'/assets/images/fundo_sobreNos.png'});
-   
+    background-image: url(${'/assets/images/wallpaperflare 1.svg'});
+    background-repeat: no-repeat;
     color: #ffff;
    
 

@@ -7,8 +7,10 @@ export default function Index() {
     return(
         <FaleConosco>
             <CabecalhoInWhite></CabecalhoInWhite>
-            <div class="Container">
-               <div className= "Titulo"> Fale Conosco</div>
+            <div className="Container">
+               <div className= "Titulo"> 
+                    <div className= "faleConosco"> Fale Conosco</div>
+               </div>
                <div className= "conteudo">
                     <div className= "Parte1">
                         <div className= "mapa"> <img class ="mapa" src={"./assets/images/mapa.png"} alt="" ></img></div>
@@ -19,7 +21,7 @@ export default function Index() {
                         <div className= "label">Nome:</div>
                         <input class="input-nome" type="text"/>
                         <div className= "label"> Sua mensagem: </div>
-                        <input class="input-mensagem" type="textearea" placeholder="Insira sua mensagem"/>
+                        <input class="input-mensagem" type="text"/>
                         <button className= "botao-enviar"> Enviar </button> 
                     </div>
                </div>

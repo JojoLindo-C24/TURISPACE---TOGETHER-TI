@@ -54,6 +54,7 @@ const Rodape = styled.div`
     align-items: center;
     margin: 25px 30px 0px 30px;
     width: 210px;
+
 }
 
 .coluna5{
@@ -118,6 +119,11 @@ const Rodape = styled.div`
 .twitter-logo{
     margin: 0px 0px 0px 20px;
     cursor: pointer;
+}
+
+.link{
+   color : #ffffff ;
+   text-decoration: none;
 }
 `
 export {Rodape};

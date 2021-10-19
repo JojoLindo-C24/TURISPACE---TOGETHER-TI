@@ -2,34 +2,22 @@ import styled from "styled-components";
 import BackgroundFaleConosco from "../../assets/images/fundo_fale_conosco.png"
 
 const FaleConosco =  styled.div`
-body{margin: 0px}
-*{
-    box-sizing: border-box;
-    cursor: default;
+background-image: url(${BackgroundFaleConosco});
+
+
+
+.Titulo{
+    display: flex;
+    justify-content: center;
 }
 
+.faleConosco   {  
 
-.Container {
-    height: 140vh;
-    width: 100vw;
-    background-image: url(${BackgroundFaleConosco});
-    background-repeat: no-repeat;
-    background-position: center top;
-    display: column;
-    justify-items: center;
-  
-}
-
-
-.Titulo{     
-margin: auto;
-justify-content: center;
 color:antiquewhite;
 text-align: center;
 font-size: 50px;
-width: 25vw;
-height: 10vh;
-margin: 10px;
+width: 30vw;
+height: 8vh;
 background: hsla(252, 87%, 9%, 0.562);
 border: 2px solid rgba(15, 109, 210, 0.8);
 border-radius: 15px;
@@ -42,7 +30,7 @@ border-radius: 15px;
 
 .Parte1{
 width: 37vw;
-height: 60vh;
+height: 58vh;
 text-align: center;
 margin: 100px;
 background: hsla(252, 87%, 9%, 0.562);
@@ -68,25 +56,32 @@ border-radius: 15px;
 }
 
 .Parte2 {
+    font-size: 30px;
     width: 45vw;
     height: 60vh;
     align-items: center;  
+    color: #ffff;
+
 }
 
 
 label {
     
-    font-size:30px;  
+    font-size:90px;  
+
 }
 
 input {
-    border-radius: 7px;
-    padding: 9px 80px 8px 170px;
-    margin: 1px 0px 8px 0px ;
+    display: flex;
 }
 
 
-textarea {
+.input-mensagem{
+    padding: 150px 80px 8px 180px;
+    margin: 1px 0px 8px 0px ;  
+}
+
+text {
     border-radius: 7px;
     padding: 150px 80px 8px 180px;
     margin: 1px 0px 8px 0px ;
