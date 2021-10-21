@@ -15,8 +15,8 @@ const Container = styled.div`
     border-radius: 20px;
 }
 .imagem{
-    height: 280px;
-    width: 200px;
+    height: 240px;
+    width: 160px;
     object-fit: cover;
     object-position: center;
     border-radius: 20px 0px 0px 20px;
@@ -25,18 +25,18 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: right;
-    padding: 2em 0em 2em 2em;
+    padding: 1em 0em 1em 2em;
 }
 .titulo{
-    font: 700 38px OpenSans-Bold;
+    font: 700 36px OpenSans-Bold;
     color: white;
 }
 .componentes{
-    font: 400 24px Roboto-Light;
+    font: 400 22px Roboto-Light;
     color: white;
 }
 .preco{
-    font: 400 26px Roboto;
+    font: 400 24px Roboto;
     color: white;
     font-weight: bold;
     margin-right: 20px;
@@ -46,7 +46,7 @@ const Container = styled.div`
 .mais-info{
     border: none;
     border-radius: 7px;
-    font: 400 22px Roboto-Thin;
+    font: 400 20px Roboto-Thin;
     color: white;
     background-color: transparent;
     cursor: pointer;

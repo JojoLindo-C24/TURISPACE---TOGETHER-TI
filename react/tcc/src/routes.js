@@ -9,7 +9,8 @@ import DetalhePacotes from "./pages/infoPacote"
 import SenhaNova from './pages/senhaNova';
 import SobreNos from './pages/sobreNos';
 import FaleConosco from './pages/faleConosco';
-import MinhaConta from './pages/minhaConta'
+import MinhaConta from './pages/minhaConta';
+import TicketCompra from './pages/ticketCompra';
 
 
 import Teste from './components/comum/cabecalhoInWhite'
@@ -30,6 +31,7 @@ export default function Routes() {
                 <Route path="/faleConosco" exact={true} component={FaleConosco} />
                 <Route path= "/sobreNos" exact={true} component = {SobreNos} />
                 <Route path= "/minhaConta" exact={true} component = {MinhaConta} />
+                <Route path="/ticketCompra" exact={true} component={TicketCompra} />
                 <Route path="/teste" exact={true} component={Teste} />
                 <Route path="/teste2" exact={true} component={Teste2} />
                 {/* <Route path="/teste3" exact={true} component={Teste3} /> */}

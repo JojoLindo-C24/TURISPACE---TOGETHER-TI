@@ -17,115 +17,14 @@ const Container = styled.div`
   align-items: center;
 }
 
-.bt-listar{
-    border: none;
-    background-color: #c4c4c4;
-    font: 22px Roboto-Light;
-    color: white;
-    border-radius: 17px;
-    padding: 1em;   
-}
-
 .lista-produtos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
   }
-
-.coluna1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 4em;
-}
-
-.bloco1{
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(0, 5, 9, 0.85);
-    border-radius: 20px;
-    margin: 20px;
-}
-.imagem{
-    height: 300px;
-    width: 220px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 20px 0px 0px 20px;
-}
-.conteudo{
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    padding: 2em 0em 2em 2em;
-}
-.titulo{
-    font: 700 38px OpenSans-Bold;
-    color: white;
-}
-.componentes{
-    font: 400 24px Roboto-Light;
-    color: white;
-}
-.preco{
-    font: 400 26px Roboto;
-    color: white;
-    font-weight: bold;
-    margin-right: 20px;
-    margin-top: 7px;
-}
-
-.mais-info{
-    border: none;
-    border-radius: 7px;
-    font: 400 22px Roboto-Thin;
-    color: white;
-    background-color: transparent;
-    cursor: pointer;
-}
-.mais-info:hover{
-    text-decoration: underline;
-}
-
-.top-cont{
-    display: flex;
-    flex-direction: column;
-}
-
-.middle-cont{
-    display: flex;
-    flex-direction: row;
-    align-items: right;
-}
-
-.bt-compra{
-    border-radius: 10px 0px 0px 10px;
-    background-color: rgba(196, 196, 196, 0.25);
-    padding: 0.5em 1em 0.5em 1em;
-    cursor: pointer;
-    border: none;
-}
-
-.img-compra{
-    height: 30px;
-    width: auto;
-    margin: 0px 10px 0px 10px;
-}
-
-.linha-top-cont{
-    display: flex;
-    flex-direction: row;
-}
-
-.linha-cont{
-    background-color: white;
-    width: 7px;
-    height: auto;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
+  
 .Turispace{
     margin-right: 80px;
 }
