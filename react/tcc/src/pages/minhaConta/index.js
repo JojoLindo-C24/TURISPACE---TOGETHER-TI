@@ -12,8 +12,8 @@ export default function index(){
                     <div className= "coluna-1">
                         <div className= "titulo"> <img class="tracinho" src={"../../assets/images/tracinho.png"} alt=""/>   Minhas Informações </div>
                         <div className= "informacoes">
-                            <input className= "input-nome" type= "text" placeholder= "Nome:"/>
-                            <input className= "input-celular" type= "text" placeholder= "Celular:"/>
+                            <input className= "input-nome" type= "text" placeholder= "Nome:"/> 
+                            <input className= "input-celular" type= "text" placeholder= "Celular:"/> 
                             <input className= "input-CPF" type= "text" placeholder= "CPF:"/>
                             <input className= "input-email" type= "text" placeholder= "Email:"/>
                         </div>
@@ -23,10 +23,6 @@ export default function index(){
                         </div>
                     </div>
                     <div className= "coluna-2">
-                        <div className="perfil">
-                            <img src ={"../../assets/images/perfil.png"} alt=""/>
-                            <div className="nome"> nome </div>
-                        </div>
                         <div className="botoes-conta">
                         <button className="Cancelar"> Cancelar </button>
                         <button className="trocar"> Trocar de Conta </button>
