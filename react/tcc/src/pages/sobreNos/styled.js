@@ -3,7 +3,7 @@ import styled from "styled-components";
 const SobreNos = styled.div `
     height: 100vh;
     width: 100vw;
-    background-image: url(${'/assets/images/wallpaperflare 1.svg'});
+    background-image: url(${'/assets/images/fundoSobreNos.png'});
     background-repeat: no-repeat;
     color: #ffff;
    

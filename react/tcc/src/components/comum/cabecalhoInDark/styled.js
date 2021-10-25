@@ -4,7 +4,7 @@ const CabecalhoInDark = styled.div`
     justify-content: center;
     background-color: rgba(0, 5, 32, 0.85);
     width: 100%;
-    height: 12vw;
+    height: 10vw;
 
 
 .f1-Cabecalho{
