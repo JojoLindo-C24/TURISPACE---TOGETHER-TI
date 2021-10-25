@@ -13,8 +13,7 @@ const Rodape = styled.div`
 .coluna1{
     display: flex;
     flex-direction: column;
-    font-size: 16px ;
-    font-family: 'Open Sans', sans-serif;
+    font: 16px OpenSans-bold;
     color: white;
     align-items: center;
     margin: 15px 30px 0px 00px;
@@ -25,8 +24,7 @@ const Rodape = styled.div`
 .coluna2{
     display: flex;
     flex-direction: column;
-    font-size: 16px ;
-    font-family: 'Open Sans', sans-serif;
+    font: 16px OpenSans-bold;
     color: white;
     align-items: center;
     margin: 25px 30px 0px 30px;
@@ -37,8 +35,7 @@ const Rodape = styled.div`
     display: flex;
     flex-direction: column;
     width: 160px;
-    font-size: 16px ;
-    font-family: 'Open Sans', sans-serif;
+    font: 16px OpenSans-bold;
     color: white;
     align-items: center;
     margin: 25px 30px 0px 30px;
@@ -48,8 +45,7 @@ const Rodape = styled.div`
 .coluna4{
     display: flex;
     flex-direction: column;
-    font-size: 16px ;
-    font-family: 'Open Sans', sans-serif;
+    font: 16px OpenSans-bold;
     color: white;
     align-items: center;
     margin: 25px 30px 0px 30px;
@@ -60,8 +56,7 @@ const Rodape = styled.div`
 .coluna5{
     display: flex;
     flex-direction: column;
-    font-size: 16px ;
-    font-family: 'Open Sans', sans-serif;
+    font: 16px OpenSans-bold;
     color: white;
     align-items: center;
     margin: 25px 30px 0px 30px;
@@ -80,6 +75,15 @@ const Rodape = styled.div`
     cursor: pointer;
     margin-top: 10px;
     color: white;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    font: 16px OpenSans-bold;
+    color: white;
+}
+
+.c4-baixo2:hover{
+    text-decoration: underline;
 }
 
 .c1-cima{

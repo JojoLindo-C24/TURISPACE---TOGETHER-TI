@@ -28,7 +28,7 @@ export default function IndexRodape() {
                     <Link to={{
                         pathname: '/sobreNos'
                     }}>
-                        <div className='c4-baixo2'> Sobre nós </div>   
+                        <button className='c4-baixo2'> Sobre nós </button>   
                     </Link>
                    
                 </div>

@@ -15,7 +15,7 @@ const Container = styled.div`
     border-radius: 20px;
 }
 .imagem{
-    height: 240px;
+    height: 230px;
     width: 160px;
     object-fit: cover;
     object-position: center;
@@ -26,11 +26,15 @@ const Container = styled.div`
     flex-direction: column;
     align-items: right;
     padding: 1em 0em 1em 2em;
+    justify-content: space-around;
 }
+
 .titulo{
-    font: 700 36px OpenSans-Bold;
+    font: 700 26px OpenSans-Bold;
     color: white;
+    width: 180px;
 }
+
 .componentes{
     font: 400 22px Roboto-Light;
     color: white;

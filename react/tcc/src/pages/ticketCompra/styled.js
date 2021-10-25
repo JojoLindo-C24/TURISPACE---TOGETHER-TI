@@ -1,46 +1,104 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-    display: flex;
-    flex-direction: row;
-    background-image: url("../assets/images/BackgroundTicket.png");
-    height: 100vh;
+    background-image: url(${'/assets/images/BackgroundTicket.png'});
     width: 100vw;
+    height: 100vh;
     position: relative;
 
 .f1-container{
-    display: flex;
-    flex-direction: row;
-    background-color: #000509BF;
-    height: 100vh;
+    background-color: rgba(0, 5, 9, 0.75);
     width: 100vw;
-    position: relative;
-}
-
-.botaoVoltar{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    background-color: #000509BF;
-    border-radius: 0px 15px 15px 0px;
-    border: none;
-    padding: 1em 2em;
-    justify-content: center;
+    align-items: center;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.top-content{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(153, 153, 153, 0.7);
+    padding: 2em;
+    justify-content: space-between;
+}
+
+.middle-content{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(245, 245, 245, 0.9);
+    padding: 1em 3em 1em 3em;
+    justify-content: space-between;
+}
+
+.bottom-content{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(25, 47, 69, 0.9);
+    padding: 1.3em;
+}
+
+.imgProd{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.listar-itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: flex-end;
-    cursor: pointer;
-    align-self: flex-end;
-    margin-bottom: 3%;
 }
 
-.voltar{
-    font: 16px Roboto-Light;
+.nomeProd{
+    font: 32px Roboto-Light;
+    color: black;
+}
+
+.qtd{
+    font: 36px Rosario-SemiBold;
+    color: black;
+}
+
+.preco{
+    padding: 1em;
+    background-color: #c4c4c4;
+    font: 18px Roboto-Light;
     color: white;
-    margin-bottom: 5px;
+    border-radius: 10px;
 }
 
-.img-voltar{
-    height: 25px;
-    width: auto;
+.detalhesCompra{
+    font: 22px Roboto-Thin;
+    color: white;
+}
+
+.n-pedido{
+    font: 22px Roboto-Light;
+    color: white;
+}
+
+.nomeCliente{
+    font: 18px Roboto-Light;
+    color: white;
+}
+
+.RgCliente{
+    font: 18px Roboto-Light;
+    color: white;
+}
+
+.dataCompra{
+    font: 18px Roboto-Light;
+    color: white;
 }
 `
 export {Container};

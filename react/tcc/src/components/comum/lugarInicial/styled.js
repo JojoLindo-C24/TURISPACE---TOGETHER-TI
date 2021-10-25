@@ -8,21 +8,25 @@ const Container = styled.div`
     align-items: center;
     border: none;
     cursor: pointer;
-    margin-top: 5em;
-    margin-bottom: 2em;
+    margin: 2em;
 
 .img-turismo{
-    width: 360px;
-    height: 360px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px 20px 0px 0px;
 }
 
-.nm-lugar{
-    padding: 1em;
+.nm-lugar{ 
+    padding: 1em 0em 1em 0em;
     font: 22px Rosario-SemiBold;
     color: white;
     border: none;
     cursor: pointer;
     background-color: transparent;
+}
+
+.nm-lugar:hover{
+    text-decoration: underline;
 }
 `
 export {Container};

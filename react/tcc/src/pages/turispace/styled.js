@@ -24,7 +24,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
   }
-  
+
 .Turispace{
     margin-right: 80px;
 }
@@ -48,7 +48,6 @@ const Container = styled.div`
 .container2{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     background-image: url(${'/assets/images/saopaulo.png'});
     align-items: center;
 }
@@ -56,33 +55,26 @@ const Container = styled.div`
 .lugaresInicial{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.bloco2{
-    display: flex;
-    flex-direction: column;
-    background: rgba(0, 5, 9, 0.85);
-    border-radius: 20px;
-    align-items: center;
-    border: none;
-    cursor: pointer;
-    margin-top: 5em;
+    margin-top: 3em;
     margin-bottom: 2em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.img-turismo{
-    width: 360px;
-    height: 360px;
-}
-
-.nm-lugar{
-    padding: 1em;
-    font: 22px Rosario-SemiBold;
+.mais-lugares{
+    text-decoration: none;
     color: white;
-    border: none;
+    font: 22px Rosario-SemiBold;
     cursor: pointer;
-    background-color: transparent;
+    margin-bottom: 2em;
+    background-color: rgba(0, 5, 9, 0.85);
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.mais-lugares:hover{
+    text-decoration: underline;
 }
 `
 export {Container}

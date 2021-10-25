@@ -24,8 +24,6 @@ export default function Pacotes(props) {
                             <button className="bt-compra"> <img className="img-compra" src={"../../assets/images/compra.svg"} alt=""/> </button>
                         </Link>
                     </div>
-                    <br></br>
-                    <br></br>
                     <Link to={{
                         pathname: '/detalhePacote',
                         state: props.info

@@ -18,5 +18,9 @@ const CabecalhoInWhite = styled.div`
     cursor: pointer;
     color: white;
 }
+
+.botao-cabecalho:hover{
+    text-decoration: underline;
+}
 `
 export {CabecalhoInWhite}
