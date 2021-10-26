@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const SobreNos = styled.div `
     background-image: url(${'/assets/images/fundoSobreNos.png'});
-    //background-size:900px 1500px;
     background-repeat: no-repeat;
     color: #ffff;
    

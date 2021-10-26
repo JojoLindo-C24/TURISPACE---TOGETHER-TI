@@ -22,11 +22,14 @@ export default function Index() {
                         <input class="input-nome" type="text"/>
                         <div className= "label"> Sua mensagem: </div>
                         <input class="input-mensagem" type="text"/>
-                        <button className= "botao-enviar"> Enviar </button> 
+                        <div className="botao">
+                           <button className= "botao-enviar"> Enviar </button> 
+                        </div>
                     </div>
                </div>
+               <IndexRodape></IndexRodape>
             </div>
-            <IndexRodape></IndexRodape>
+           
         </FaleConosco>
         
     )
