@@ -13,20 +13,23 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .conteudo{
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 70%;
 }
 
 .top-content{
     display: flex;
     flex-direction: row;
     background-color: rgba(153, 153, 153, 0.7);
-    padding: 2em;
     justify-content: space-between;
+    height: 12vh;
+    align-items: center;
+    padding: 2em;
 }
 
 .middle-content{
@@ -35,6 +38,7 @@ const Container = styled.div`
     background-color: rgba(245, 245, 245, 0.9);
     padding: 1em 3em 1em 3em;
     justify-content: space-between;
+    height: 24vh;
 }
 
 .bottom-content{
@@ -42,6 +46,7 @@ const Container = styled.div`
     flex-direction: column;
     background-color: rgba(25, 47, 69, 0.9);
     padding: 1.3em;
+    height: 12vh;
 }
 
 .imgProd{

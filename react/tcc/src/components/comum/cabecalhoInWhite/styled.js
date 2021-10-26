@@ -3,6 +3,7 @@ import styled from "styled-components";
 const CabecalhoInWhite = styled.div`
     justify-content: center;
     width: 100%;
+    margin-top: 10px;
 
 .f1-Cabecalho{
     display: flex;

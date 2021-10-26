@@ -11,6 +11,7 @@ const Container = styled.div`
     padding: 1em;
     align-items: center;
     cursor: pointer;
+    outline: none;
 }
 
 .voltar{

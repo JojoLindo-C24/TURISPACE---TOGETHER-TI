@@ -23,6 +23,10 @@ const CabecalhoInDark = styled.div`
     margin-right: 30px;
 }
 
+.botao-cabecalho:hover{
+    text-decoration: underline;
+}
+
 .logo{
     margin-top: 10px;
 }
