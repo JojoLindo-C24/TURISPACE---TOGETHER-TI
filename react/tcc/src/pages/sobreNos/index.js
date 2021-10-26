@@ -8,8 +8,10 @@ export default function index(){
         <SobreNos>
             <CabecalhoInDark></CabecalhoInDark>
             <div class= "Conatiner"> 
-                <div className= "Titulo"> Sobre Nós </div>
-                <div className= "Conteuodo-1"> Nossa empresa tem o objetivo de indicar e mostrar os<br></br> melhores locais para conhecer em São paulo. Trabalhamos<br></br> em pesquisas diarias,  com conforto, segurança e o melhor<br></br> aproveitamento do seu dinheiro. </div>
+                <div className= "Conteuodo-1">
+                    <div className="titulo-C1">Sobre Nós</div>
+                    <div className="text">Nossa empresa tem o objetivo de indicar e mostrar os melhores locais para conhecer em São paulo. Trabalhamos em pesquisas diarias,  com conforto, segurança e o melhor aproveitamento do seu dinheiro.</div>
+                </div>
                 <div className= "Conteuodo-2">
                     <div className= "titulo-C2"> QUEM SOMOS </div>
                     <div className="info">

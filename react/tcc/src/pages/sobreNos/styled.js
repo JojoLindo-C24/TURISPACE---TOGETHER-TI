@@ -15,34 +15,41 @@ const SobreNos = styled.div `
     
 }
 
-.Titulo{
-    margin: auto;
-    margin-top: 7vh;
-    display: flex;
-    font-size: 59px;
-    justify-content: center;
-    text-align: center;
-    width: 32vw;
-    height: 15vh;
-    border: 4px solid #0F6DD2;
-    box-sizing: border-box;
-    border-radius: 10px;
-    background: rgba(0, 0, 1, 0.74);
-}
+// titulo{
+//    margin: auto;
+//    margin-top: 7vh;
+//    display: flex;
+//    font-size: 59px;
+//    justify-content: center;
+//    text-align: center;
+//    width: 32vw;
+//    height: 15vh;
+//    border: 4px solid #0F6DD2;
+//    box-sizing: border-box;
+//    border-radius: 10px;
+//    background: rgba(0, 0, 1, 0.74);
+//}
 
 
 .Conteuodo-1{
-    margin-top: 6vh;
-    margin-left: 5vw;
-    display: flex;
-    font-size: 19px;
-    align-items: center;
-    padding: 0px 0px 0px 15px;
-    width: 46vw;
-    height: 23vh;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 100;  
+    margin-top:26px;
+    margin-left: 9vw;
+    width: 29%;
     border: 4px solid #0F6DD2;
     border-radius: 10px;
     background: rgba(0, 0, 1, 0.74);
+   
+}
+
+
+
+.titulo-C1{
+    font-size: 19px;
+    text-align: center;
+    height: 5vh;
 }
 
 .Conteuodo-2{
