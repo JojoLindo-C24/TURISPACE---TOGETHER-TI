@@ -13,7 +13,7 @@ export default function index(){
                     <div className="text">Nossa empresa tem o objetivo de indicar e mostrar os melhores locais para conhecer em São paulo. Trabalhamos em pesquisas diarias,  com conforto, segurança e o melhor aproveitamento do seu dinheiro.</div>
                 </div>
                 <div className= "Conteuodo-2">
-                    <div className= "titulo-C2"> QUEM SOMOS </div>
+                    <div className= "titulo-C2"> Nossa Equipe </div>
                     <div className="info">
                         <div className= "Nomes"> Luciane Costa Xavier<br></br> Letícia Santos Rocha<br></br>Jonathan Fernando Costa<br></br>Otávio Augusto Reis   </div> 
                         <div className= "Parcerias"> 
@@ -23,9 +23,9 @@ export default function index(){
                     </div> 
                 </div>
                 <button className= "voltar">  </button>
-
+                <IndexRodape></IndexRodape>
             </div>
-            <IndexRodape></IndexRodape>
+            
 
         </SobreNos>
     )

@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 const SobreNos = styled.div `
-    height: 100vh;
-    width: 100vw;
     background-image: url(${'/assets/images/fundoSobreNos.png'});
+    //background-size:900px 1500px;
     background-repeat: no-repeat;
     color: #ffff;
    
@@ -38,7 +37,7 @@ const SobreNos = styled.div `
     margin-top:26px;
     margin-left: 9vw;
     width: 29%;
-    border: 4px solid #0F6DD2;
+    border: 1px solid #0F6DD2;
     border-radius: 10px;
     background: rgba(0, 0, 1, 0.74);
    
@@ -47,29 +46,29 @@ const SobreNos = styled.div `
 
 
 .titulo-C1{
-    font-size: 19px;
+    font-size: 29px;
     text-align: center;
-    height: 5vh;
+    height: 7vh;
 }
 
 .Conteuodo-2{
-    margin-top: 5vh;
+    
     margin-left: 65vw;
-    display: column;
-    align-items: center;
-    justify-content: center;
-    width: 28vw;
-    height: 25vh;
-    border: 4px solid #0F6DD2;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 100;  
+    margin-top:26px;
+    width: 29%;
+    border: 1px solid #0F6DD2;
     border-radius: 10px;
     background: rgba(0, 0, 1, 0.74);
     
 }
 
 .titulo-C2{
-    font-size: 19px;
+    font-size: 29px;
     text-align: center;
-    height: 5vh;
+    height: 7vh;
 }
 
 .info{
