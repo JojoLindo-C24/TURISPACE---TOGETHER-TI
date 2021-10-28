@@ -5,13 +5,13 @@ import Login from './pages/login';
 import EsqueceuSenha from './pages/esqueceuSenha';
 import Codigo from './pages/codigo';
 import Cadastro from './pages/cadastro'
-import DetalhePacotes from "./pages/infoPacote"
 import SenhaNova from './pages/senhaNova';
 import SobreNos from './pages/sobreNos';
 import FaleConosco from './pages/faleConosco';
 import MinhaConta from './pages/minhaConta';
 import TicketCompra from './pages/ticketCompra';
-import Error from './pages/errorPage'
+import Error from './pages/errorPage';
+import InfoPacote from './pages/infoPacote'
 
 
 import Teste from './components/comum/cabecalhoInWhite'
@@ -27,12 +27,12 @@ export default function Routes() {
                 <Route path="/esqueceuSenha" exact={true} component={EsqueceuSenha} />
                 <Route path="/codigo" exact={true} component={Codigo} />
                 <Route path="/cadastrar" exact={true} component={Cadastro} />
-                <Route path="/detalhePacote" exact={true} component={DetalhePacotes} />
                 <Route path="/novaSenha" exact={true} component={SenhaNova} />
                 <Route path="/faleConosco" exact={true} component={FaleConosco} />
                 <Route path= "/sobreNos" exact={true} component = {SobreNos} />
                 <Route path= "/minhaConta" exact={true} component = {MinhaConta} />
                 <Route path="/ticketCompra" exact={true} component={TicketCompra} />
+                <Route path="/infoPacote" exact={true} component={InfoPacote} />
                 <Route path="/error" exact={true} component={Error} />
                 <Route path="/teste" exact={true} component={Teste} />
                 <Route path="/teste2" exact={true} component={Teste2} />

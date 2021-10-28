@@ -89,16 +89,13 @@ const Login = styled.div`
 }
 
 .esqueceu-senha{
-    font: 14px Roboto-Light;
+    font: 12px Roboto-Thin;
     color: white;
     margin-top: 15px;
     cursor: pointer;
     text-decoration: none;
 }
 
-.esqueceu-senha:visited{
-    color: white;
-}
 
 .botao-logar{
     border-radius: 20px;

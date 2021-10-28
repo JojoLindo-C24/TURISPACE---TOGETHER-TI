@@ -9,7 +9,6 @@ const Codigo = styled.div`
 .digite-codigo{
     font: 28px Roboto-Thin;
     color: white;
-    margin-top: 150px;
 }
 
 .codigo{
@@ -28,10 +27,11 @@ const Codigo = styled.div`
     font: 32px Roboto-Thin;
     text-align: center  ;
     color: #777777;
+    outline: none;
 }
 
 .linha-codigo{
-    height: 1.5px;
+    height: 1.7px;
     width: 60px;
     background-color: #777777;
     margin-left: 10px;

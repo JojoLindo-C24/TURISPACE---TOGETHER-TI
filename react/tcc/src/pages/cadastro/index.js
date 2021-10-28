@@ -39,7 +39,7 @@ export default function Index() {
                     </div>
                 </div>
             </div>
-            <IndexRodape></IndexRodape>
+            <IndexRodape/>
         </Cadastro>
         
     )

@@ -10,27 +10,23 @@ const EsqueceuSenha = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 300px;
 }
 
 .logo-usuario{
     width: 100px;
     height: 100px;
-    margin-top: 130px ;
 }
 
 .esqueceu-senha{
     font: 42px Roboto-Thin;
     color: white;
     margin-left: 35px;
-    margin-top: 130px ;
 }
 
 .linha-email{
     width: 600px;
     height: 1px;
     background-color: white;
-    margin-left: 300px;
 }
 
 .input-email{
@@ -38,7 +34,6 @@ const EsqueceuSenha = styled.div`
     background-color: transparent;
     font: 22px Roboto-Light;
     color: white;
-    margin-left: 300px;
     margin-top: 50px;
 }
 
@@ -49,7 +44,6 @@ const EsqueceuSenha = styled.div`
     font: 24px Roboto-Thin;
     color: white;
     padding: 10px 40px 10px 40px;
-    margin-left: 550px;
     margin-top: 100px;
     cursor: pointer;
 }

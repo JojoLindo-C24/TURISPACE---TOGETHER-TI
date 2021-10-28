@@ -16,7 +16,6 @@ const Container = styled.div`
 .redefinir-senha{
     font: 28px Roboto-Thin;
     color: white;
-    margin-top: 130px;
 }
 
 .senha{

@@ -2,6 +2,9 @@ import styled from "styled-components";
 import Fundo from "../../assets/images/construcoes1.png"
 
 const Cadastro = styled.div`
+display: flex;
+flex-direction: column;
+
 .Container{
     height: 100vh;
     width: 100vw;
