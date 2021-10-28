@@ -3,7 +3,7 @@ import styled from "styled-components";
 const CabecalhoInDark = styled.div`
     justify-content: center;
     background-color: rgba(0, 5, 32, 0.85);
-    width: 100%;
+    width: 100vw;
     height: 10vw;
 
 
