@@ -4,7 +4,7 @@ import BackgroundFaleConosco from "../../assets/images/fundo_fale_conosco.png"
 const FaleConosco =  styled.div`
     background-image: url(${BackgroundFaleConosco});
     background-repeat: no-repeat;
-    height: 150vh;
+    height: 157vh;
     width: 100vw;
 
 .Titulo{
