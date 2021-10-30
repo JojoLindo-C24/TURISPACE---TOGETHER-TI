@@ -46,7 +46,6 @@ const Container = styled.div`
     flex-direction: column;
     background-color: rgba(25, 47, 69, 0.9);
     padding: 1.3em;
-    height: 12vh;
 }
 
 .imgProd{

@@ -1,11 +1,16 @@
 import { Container } from "./styled";
 import { Link } from "react-router-dom";
+// import { useEffect, useState } from "react";
 
 export default function Pacotes(props) {
     return(
         <Container>
             <div className="bloco">
-                <img className="imagem" src={props.info.imagem} alt="" />
+                <img className="imagem" src={props.info.imagem1} alt="" />
+                {/* <img className="imagem" src={props.info.imagem2} alt="" />
+                <img className="imagem" src={props.info.imagem3} alt="" />
+                <img className="imagem" src={props.info.imagem4} alt="" />
+                <img className="imagem" src={props.info.imagem5} alt="" /> */}
                 <div className="conteudo">
                     <div className="top-cont">   
                         <div className="linha-top-cont">
@@ -17,15 +22,15 @@ export default function Pacotes(props) {
                     <br></br>
                     <div className="middle-cont">
                         <div className="preco"> {props.info.preco} </div>
-                        <Link to={{
+                        {/* <Link to={{
                             pathname: '/detalhePacote',
                             state: props.info
                         }}>
                             <button className="bt-compra"> <img className="img-compra" src={"../../assets/images/compra.svg"} alt=""/> </button>
-                        </Link>
+                        </Link> */}
                     </div>
                     <Link to={{
-                        pathname: '/detalhePacote',
+                        pathname: '/infoPacote',
                         state: props.info
                     }}>
                         <button className="mais-info"> Mais Informações </button>

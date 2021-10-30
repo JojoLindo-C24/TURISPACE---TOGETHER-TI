@@ -8,6 +8,7 @@ import OpenSansBold from './OpenSans-Bold.woff2'
 import Roboto from './Roboto-Medium.woff2'
 import MontserratSemiBold from './Montserrat-SemiBold.woff2'
 import RobotoBold from './Roboto-Bold.woff2'
+import OpenSansSemiBold from './OpenSans-SemiBold.woff2'
 
 export default createGlobalStyle`
     @font-face {
@@ -62,6 +63,12 @@ export default createGlobalStyle`
         font-family: Roboto-Bold;
         src: url(${RobotoBold})format('woff2');
         font-weight: 700;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: OpenSans-SemiBold;
+        src: url(${OpenSansSemiBold})format('woff2');
+        font-weight: 800;
         font-style: normal;
     }
 `
