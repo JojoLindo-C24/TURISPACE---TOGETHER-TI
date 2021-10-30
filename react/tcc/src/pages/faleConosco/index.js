@@ -27,9 +27,8 @@ export default function Index() {
                         </div>
                     </div>
                </div>
-               <IndexRodape></IndexRodape>
             </div>
-           
+            <IndexRodape></IndexRodape>
         </FaleConosco>
         
     )
