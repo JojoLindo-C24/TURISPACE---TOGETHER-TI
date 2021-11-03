@@ -1,6 +1,7 @@
 import { SobreNos } from "./styled";
 import CabecalhoInDark from '../../components/comum/cabecalhoInDark';
 import IndexRodape from '../../components/comum/rodape';
+import BotaoVoltar from '../../components/comum/botaoVoltar';
 
 
 export default function index(){
@@ -29,8 +30,8 @@ export default function index(){
                         </div>
                     </div> 
                 </div>
-                <button className= "voltar">  </button>
             </div>
+            <BotaoVoltar></BotaoVoltar>
             <IndexRodape></IndexRodape>
         </SobreNos>
     )
