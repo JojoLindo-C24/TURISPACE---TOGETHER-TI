@@ -127,12 +127,12 @@ flex-direction: column;
     flex-direction: column;
     align-items: center;
     background-color: rgba(4, 30, 57, 0.85);
-    padding: 2em 3em 2em 3em;
+    padding: 1em 3em 1em 3em;
     margin: 0px 0px 0px 70px;
 }
 
 .logo {
-    width: auto;
+    width: 80%;
     height: auto;
 }
 
@@ -144,19 +144,20 @@ flex-direction: column;
 .input-email{
     border-style: none;
     border-radius: 4px;
-    padding: 1em 1.7em 1em 1.7em;
-    margin: 25px 0px 15px 0px;
+    padding: 0.7em 1.7em;
     font: 16px Rosario;
     color: #777777;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .input-senha{
     border-style: none;
     border-radius: 4px;
-    padding: 1em 1.7em 1em 1.7em;
-    margin: 0px 0px 20px 0px;
+    padding: 0.7em 1.7em;
     font: 16px Rosario;
     color: #777777;
+    margin-bottom: 10px;
 }
 
 a{

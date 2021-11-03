@@ -25,6 +25,8 @@ export default function Index() {
                             <div class="cadastrar">Cadastre-se</div>
                             <input class="input-email" type="text" placeholder="Insira seu e-mail"/>
                             <input class="input-senha" type="text" placeholder="Insira sua senha"/>
+                            <input class="input-senha" type="text" placeholder="Insira seu celular"/>
+                            <input class="input-senha" type="text" placeholder="Insira seu CPF"/>
                             <Link to={{
                                 pathname: '/'
                             }}>
