@@ -10,8 +10,10 @@ export default function index(){
             <div className= "Container">
                 <div className= "conteudo-MC">
                     <div className= "conteudo-MI">
-                        <div className= "titulo">   Minhas Informações </div>
-                        <div className="line-content"></div>
+                        <div className="titulo">
+                            <div className= "f1-titulo">   Minhas Informações </div>
+                            <div className="line-content"></div>
+                        </div>
                         <div className= "informacoes">
                             <input className= "input-nome" type= "text" placeholder= "Nome:"/> 
                             <input className= "input-celular" type= "text" placeholder= "Celular:"/> 
