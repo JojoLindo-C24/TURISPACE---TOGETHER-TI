@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function EsqueceuSenhaAdm() {
     return(
-        <Container></Container>
+        <Container>
+            <Link></Link>
+        </Container>
     )
 }
