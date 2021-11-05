@@ -14,6 +14,7 @@ import Error from './pages/errorPage';
 import InfoPacote from './pages/infoPacote';
 import AdmFaleConosco  from './pages/admFaleConosco';
 import MinhaSacola from './pages/minhaSacola';
+import AprovacaoCompra from './pages/aprovacao';
 
 
 import Teste from './components/comum/cabecalhoInWhite'
@@ -37,6 +38,7 @@ export default function Routes() {
                 <Route path="/infoPacote" exact={true} component={InfoPacote} />
                 <Route path="/admfaleConosco" exact={true} component= {AdmFaleConosco}/>
                 <Route path="/minhaSacola" exact={true} component= {MinhaSacola}/>
+                <Route path="/aprovacao" exact={true} component={AprovacaoCompra} />
                 <Route path="/error" exact={true} component={Error} />
                 <Route path="/teste" exact={true} component={Teste} />
                 <Route path="/teste2" exact={true} component={Teste2} />
