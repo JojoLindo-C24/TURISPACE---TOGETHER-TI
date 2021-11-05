@@ -14,7 +14,7 @@ export default function SenhaNova(){
                     <div class="conteudo">
                         <div class="redefinir-senha">Redefinição de Senha</div>
                         <div className="input">
-                            <input class="senha" type="text" placeholder="Confirme sua senha"/>
+                            <input class="senha" type="text" placeholder="Digite sua senha"/>
                             <div class="linha-senha"></div>
                         </div>
                         <div className="input">

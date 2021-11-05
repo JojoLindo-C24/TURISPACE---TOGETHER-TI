@@ -44,7 +44,7 @@ flex-direction: column;
 
 .conteudo-esquerda{
     background-color:  rgba(4, 30, 57, 0.85);
-    padding: 1em 2em 1em 2em;
+    padding: 1.5em 2em 1.5em 2em;
 }
 
 .CE-faixa1 {
@@ -127,12 +127,12 @@ flex-direction: column;
     flex-direction: column;
     align-items: center;
     background-color: rgba(4, 30, 57, 0.85);
-    padding: 1em 3em 1em 3em;
+    padding: 0.7em 3em 0.7em 3em;
     margin: 0px 0px 0px 70px;
 }
 
 .logo {
-    width: 80%;
+    width: 70%;
     height: auto;
 }
 
@@ -149,6 +149,7 @@ flex-direction: column;
     color: #777777;
     margin-bottom: 10px;
     margin-top: 10px;
+    outline: none;
 }
 
 .input-senha{
@@ -158,10 +159,7 @@ flex-direction: column;
     font: 16px Rosario;
     color: #777777;
     margin-bottom: 10px;
-}
-
-a{
-    color: #ffff;
+    outline: none;
 }
 
 .botao-cadastrar{
@@ -191,6 +189,29 @@ a{
 
 .login:hover{
     text-decoration: underline;
+}
+
+.bt-adm{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none   ;
+}
+
+.img-adm{
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+.text-adm{
+    font: 15px Rosario-semiBold;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
 }
 `
 export {Cadastro};

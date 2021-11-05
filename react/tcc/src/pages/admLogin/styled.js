@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-const Login = styled.div`
-    height: 100vh;
+const Container = styled.div`
+height: 100vh;
     width: 100vw;
-    background-image: url(${'/assets/images/sao_paulo1.png'});
+    background-image: url(${'/assets/images/BackgroundTicket.png'});
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -11,29 +11,16 @@ const Login = styled.div`
     justify-content: center;
     align-items: center;
 
-.f1-container{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 95vw;
-    height: 95vh;
-    border: 5px solid #041E39;
-    box-sizing: border-box;
-    border-radius: 26px;
-    background: rgba(196, 196, 196, 0.01);
-}
-
 .conteudo{
-    width: 85%;
-    height: 75%;
-    background-color: rgba(4, 30, 57, 0.91);
-    border: 5px solid #003974;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(0, 5, 9, 0.9);
+    border: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 26px;
 
 }
 
@@ -50,7 +37,7 @@ const Login = styled.div`
 }
 
 .login{
-    font: 56px Roboto-Thin;
+    font: 52px Roboto-Thin;
     color: white;
 }
 
@@ -117,6 +104,7 @@ const Login = styled.div`
 .f1-conteudo{
     display: flex;
     flex-direction: column;
+    
 }
 `
-export {Login};
+export {Container}

@@ -35,6 +35,7 @@ const EsqueceuSenha = styled.div`
     font: 22px Roboto-Light;
     color: white;
     margin-top: 50px;
+    outline: none;
 }
 
 .botao-esqueceu-senha{

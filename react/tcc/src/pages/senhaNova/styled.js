@@ -25,6 +25,7 @@ const Container = styled.div`
     border: none;
     margin-top: 50px;
     cursor: text;
+    outline: none;
 }
 
 .linha-senha{

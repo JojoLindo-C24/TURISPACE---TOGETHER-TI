@@ -2,6 +2,7 @@ import { Codigo } from "./styled";
 
 import { BackgroundSenha } from "../../components/comum/background-senha/styled";
 import { BackgroundLine } from "../../components/comum/backgroundLine/styled";
+import { Link } from "react-router-dom";
 
 export default function Index() {
     return(
@@ -27,6 +28,11 @@ export default function Index() {
                             <div class="linha-codigo"></div>
                         </div>
                     </div>
+                    <Link to={{
+                        pathname: '/novaSenha'
+                    }}>
+                        <button className="botao">Confirmar código</button>
+                    </Link>
                 </Codigo>
             </BackgroundLine>
         </BackgroundSenha>
