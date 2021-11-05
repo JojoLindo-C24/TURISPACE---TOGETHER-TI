@@ -59,6 +59,7 @@ export const Container = styled.div`
   text-align: center;
   color: #FFFFFF;
   font-size: 20px;
+  margin-bottom: 40%;
 }
 
 .Conteudo-f2{
