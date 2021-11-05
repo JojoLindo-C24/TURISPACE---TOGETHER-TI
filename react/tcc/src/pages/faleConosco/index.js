@@ -20,7 +20,7 @@ export default function Index() {
                     <div className= "Parte2">
                         <div className= "label">Nome:</div>
                         <input class="input-nome" type="text"/>
-                        <div className= "label"> Sua mensagem: oi </div>
+                        <div className= "label"> Sua mensagem: </div>
                         <input class="input-mensagem" type="text"/>
                         <div className="botao">
                            <button className= "botao-enviar"> Enviar </button> 
