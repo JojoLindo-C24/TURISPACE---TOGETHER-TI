@@ -12,7 +12,6 @@ const Container = styled.div`
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -20,6 +19,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     width: 70%;
+    margin-left: 15%;
 }
 
 .top-content{
@@ -74,7 +74,7 @@ const Container = styled.div`
 
 .preco{
     padding: 1em;
-    background-color: #c4c4c4;
+    background-color: #7a7a7a;
     font: 18px Roboto-Light;
     color: white;
     border-radius: 10px;
@@ -103,6 +103,10 @@ const Container = styled.div`
 .dataCompra{
     font: 18px Roboto-Light;
     color: white;
+}
+
+.voltar{
+    margin-bottom: 10px;
 }
 `
 export {Container};

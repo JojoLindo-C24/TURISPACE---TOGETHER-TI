@@ -12,7 +12,7 @@ import MinhaConta from './pages/minhaConta';
 import TicketCompra from './pages/ticketCompra';
 import Error from './pages/errorPage';
 import InfoPacote from './pages/infoPacote';
-import  AdmFaleConosco  from './pages/admFaleConosco';
+import AdmFaleConosco  from './pages/admFaleConosco';
 import MinhaSacola from './pages/minhaSacola';
 
 
