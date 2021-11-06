@@ -19,9 +19,9 @@ export default function Index() {
                     </div>
                     <div className= "Parte2">
                         <div className= "label">Nome:</div>
-                        <input class="input-nome" type="text"/>
+                        <input type="text"/>
                         <div className= "label"> Sua mensagem: </div>
-                        <input class="input-mensagem" type="text"/>
+                        <textarea/>
                         <div className="botao">
                            <button className= "botao-enviar"> Enviar </button> 
                         </div>
