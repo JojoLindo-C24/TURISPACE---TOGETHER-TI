@@ -3,10 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.div`
     background-image: url(${'/assets/images/sao_paulo.png'});
     background-size: cover;
-    height: 100vh;
+    height: 150vh;
 
 .Container{
-    height: 100%;
+    height: 100vh;
     align-items: center;
     display : flex;
     flex-direction: column;
@@ -16,8 +16,8 @@ export const Container = styled.div`
     background: rgba(4, 30, 57, 0.91);
     border: 5px solid #003974;
     box-sizing: border-box;
-    width: 80%;
-    height: 90vh;
+    width: 85%;
+    height: 100vh;
     margin: 3em auto;
  }
 

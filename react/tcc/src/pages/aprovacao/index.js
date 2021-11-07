@@ -1,10 +1,12 @@
 import React from 'react';
+import CabecalhoAdm from '../../components/comum/cabecalhoAdm';
 
 import * as C from './styled.js';
 
 function AprovacaoCompra() {
   return(
     <C.Container> 
+       <CabecalhoAdm></CabecalhoAdm>
        <div className="Container">
          <div className="Conteudo">
         <div className="Box-Titulo"><img class="Barrinha" src={"../../assets/images/barrinha.png"} alt=""/> Aprovação das Compras </div>

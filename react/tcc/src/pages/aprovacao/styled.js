@@ -6,7 +6,7 @@ export const Container = styled.div`
     height: 100vh;
 
  .Container{
-    height: 100%;
+    height: 100vh;
     align-items: center;
     display : flex;
     flex-direction: column;
@@ -16,7 +16,7 @@ export const Container = styled.div`
     background: rgba(0, 5, 9, 0.65);
     border-radius: 10px;
     width: 80%;
-    height: 85%;
+    height: 90%;
     margin: 4em auto;
  }
 
@@ -25,8 +25,8 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 47%;
-  font-size: 2em;
+  width: 42%;
+  font-size: 1.8em;
   color: #FFFFFF;
   font-weight: 100;
   padding: 2em;
@@ -41,8 +41,7 @@ export const Container = styled.div`
   border: 6px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 10px;
-  padding: 0.5em;
-  width: 30em;
+  padding: 1em;
   text-align: center;
   text-transform: uppercase;
   transition: all 1s;
@@ -112,7 +111,7 @@ img {
     width: 50%;
     height: 50%;
     text-align: center;
-   font-size: .9em;
+    font-size: .9em;
 }
 
 
@@ -126,10 +125,10 @@ img {
 }
 
 .user-image img {
-    width: 57px;
-    height: 57px;
+    width: 57%;
+    height: 57%;
     border-radius: 50%;
-    height: 57px;
+    height: 57%;
     
 }
 
