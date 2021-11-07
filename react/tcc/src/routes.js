@@ -12,7 +12,7 @@ import MinhaConta from './pages/minhaConta';
 import TicketCompra from './pages/ticketCompra';
 import Error from './pages/errorPage';
 import InfoPacote from './pages/infoPacote';
-import AdmFaleConosco  from './pages/admFaleConosco';
+import AdmMensagens  from './pages/admMensagens';
 import MinhaSacola from './pages/minhaSacola';
 import AprovacaoCompra from './pages/aprovacao';
 import GerenUsuario from './pages/admGerenUsuario';
@@ -42,7 +42,7 @@ export default function Routes() {
                 <Route path= "/minhaConta" exact={true} component = {MinhaConta} />
                 <Route path="/ticketCompra" exact={true} component={TicketCompra} />
                 <Route path="/infoPacote" exact={true} component={InfoPacote} />
-                <Route path="/admfaleConosco" exact={true} component= {AdmFaleConosco}/>
+                <Route path="/admMensagens" exact={true} component= {AdmMensagens}/>
                 <Route path="/minhaSacola" exact={true} component= {MinhaSacola}/>
                 <Route path="/aprovacao" exact={true} component={AprovacaoCompra} />
                 <Route path="/gerenciamentoUsuario" exact={true} component={GerenUsuario} />
