@@ -75,6 +75,7 @@ const Login = styled.div`
     color: white;
     margin-bottom: 10px;
     cursor: text;
+    outline: none;
 }
 
 .input-senha{
@@ -86,6 +87,7 @@ const Login = styled.div`
     color: white;
     margin-bottom: 10px;
     cursor: text;
+    outline: none;
 }
 
 .esqueceu-senha{

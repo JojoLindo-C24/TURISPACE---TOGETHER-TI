@@ -9,7 +9,7 @@ export default function IndexCabecalhoInDark() {
                 <div class="f1-Cabecalho">
                     <div class="Logo"> <img src={"../../assets/images/logo1.svg"} className="logo" alt=""/> </div>
                     <Link to={{
-                        pathname: '/'
+                        pathname: '/inicial'
                     }}>
                         <button className='botao-cabecalho'> INÍCIO </button>   
                     </Link>

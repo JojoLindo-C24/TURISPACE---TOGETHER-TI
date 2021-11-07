@@ -23,7 +23,7 @@ export default function Index() {
                             </Link>
                         </div>
                             <Link to={{
-                                pathname: '/'
+                                pathname: '/inicial'
                             }}>
                                 <button class="botao-logar">Entrar</button>
                             </Link> 

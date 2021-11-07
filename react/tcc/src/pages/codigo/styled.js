@@ -46,5 +46,21 @@ const Codigo = styled.div`
     margin-left: 20px;
     margin-right: 20px;
 }
+
+.botao{
+    margin-top: 50px;
+    padding: 0.7em 1em;
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: transparent;
+    font: 18px Roboto-Light;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+}
 `
 export {Codigo};

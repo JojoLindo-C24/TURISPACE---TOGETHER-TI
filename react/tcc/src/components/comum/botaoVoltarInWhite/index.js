@@ -5,7 +5,7 @@ export default function BotaoVoltarInWhite() {
     return(
         <Container>
             <Link to={{
-                pathname: '../'
+                pathname: '../inicial'
             }}>
                 <button className="botaoVoltar">
                         <div className="voltar">VOLTAR</div>

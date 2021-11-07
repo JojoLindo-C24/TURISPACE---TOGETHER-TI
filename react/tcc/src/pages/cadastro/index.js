@@ -26,16 +26,24 @@ export default function Index() {
                             <input class="input-email" type="text" placeholder="Insira seu e-mail"/>
                             <input class="input-senha" type="text" placeholder="Insira sua senha"/>
                             <input class="input-senha" type="text" placeholder="Insira seu celular"/>
-                            <input class="input-senha" type="text" placeholder="Insira seu CPF"/>
+                            <input class="input-senha" type="text" placeholder="Insira seu nome"/>
                             <Link to={{
-                                pathname: '/'
+                                pathname: '/login'
                             }}>
                                <button class="botao-cadastrar">Cadastrar</button>
                             </Link>
                             <Link to={{
                                 pathname: '/login'
                             }}>
-                                <a className="login" href="http://127.0.0.1:5500/html/login/index.html">Já é cadastrado? Login</a>
+                                <button className="login" href="">Já é cadastrado? Login</button>
+                            </Link>
+                            <Link to={{
+                                pathname: '/loginAdm'
+                            }}>
+                                <button className="bt-adm" href="">
+                                    <img className="img-adm" src={"../../assets/images/img-adm.png"} alt='' />
+                                    <div className="text-adm">Logar como Administrador</div>
+                                </button>
                             </Link>
                         </div>
                     </div>

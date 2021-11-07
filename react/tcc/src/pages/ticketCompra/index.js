@@ -22,7 +22,6 @@ export default function TicketCompra() {
                     </div>
                     <div className="bottom-content">
                         <div className="nomeCliente">Nome: Joelma Marins do Santos</div>
-                        <div className="RgCliente">RG: 25485951-7</div>
                         <div className="dataCompra">Data da Compra: 27/06/2021</div>
                     </div>
                 </div>

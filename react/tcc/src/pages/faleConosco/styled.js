@@ -4,8 +4,9 @@ import BackgroundFaleConosco from "../../assets/images/fundo_fale_conosco.png"
 const FaleConosco =  styled.div`
     background-image: url(${BackgroundFaleConosco});
     background-repeat: no-repeat;
-    height: 157vh;
-    width: 100vw;
+    background-size: cover;
+   
+    
 
 .Titulo{
     display: flex;
@@ -65,11 +66,9 @@ const FaleConosco =  styled.div`
     padding: 0em 2em;
 }
 
-input {
-    display: flex;
-}
 
-.input-nome{
+
+input{
     width: 35em;
     height: 2.5em;
     cursor: text;
@@ -77,13 +76,16 @@ input {
     border-radius: .4em;
     border: none;
 }
-.input-mensagem{
+textarea{
+    resize: none;
+    width: 35em;
+    height:19em;
     cursor: text;
     outline: none;
     border-radius: .4em;
     border: none;
     width: 35em;
-    height: 15em;
+    
 }
 
 
@@ -100,6 +102,9 @@ input {
     padding: 2px 20px;
     cursor: pointer;
     margin-top: 1em;
+    &:hover {
+        transform: scale(1.2);;
+    }
 }
 `
 export {FaleConosco};
