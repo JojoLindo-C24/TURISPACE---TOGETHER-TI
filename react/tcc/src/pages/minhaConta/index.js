@@ -17,7 +17,7 @@ export default function index(){
                         <div className= "informacoes">
                             <input className= "input-nome" type= "text" placeholder= "Nome:"/> 
                             <input className= "input-celular" type= "text" placeholder= "Celular:"/> 
-                            <input className= "input-CPF" type= "text" placeholder= "CPF:"/>
+                            <input className= "input-CPF" type= "text" placeholder= "Senha:"/>
                             <input className= "input-email" type= "text" placeholder= "Email:"/>
                         </div>
                         <div className= "botoes">

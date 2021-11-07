@@ -26,7 +26,7 @@ export default function Index() {
                             <input class="input-email" type="text" placeholder="Insira seu e-mail"/>
                             <input class="input-senha" type="text" placeholder="Insira sua senha"/>
                             <input class="input-senha" type="text" placeholder="Insira seu celular"/>
-                            <input class="input-senha" type="text" placeholder="Insira seu CPF"/>
+                            <input class="input-senha" type="text" placeholder="Insira seu nome"/>
                             <Link to={{
                                 pathname: '/login'
                             }}>
