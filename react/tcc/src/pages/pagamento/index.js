@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import * as C from './styled.js';
 
@@ -13,7 +14,11 @@ function Pagamento() {
             <div className="name-number"><input type="text" placeholder="Nome impresso no cartão" /></div>  
             <div className="validity"><input type="text" placeholder="Validade" /><input type="text" placeholder="CVV" /> </div>
             <div className="parc-number"><input type="text" placeholder="Número de Parcelas" /><button class="buton-cancelar">Cancelar</button></div>
-            <div className="Finalizar"><button>Finalizar</button></div>
+            <Link to={{
+              pathname: '/statusCompra'
+            }}>
+              <div className="Finalizar"><button>Finalizar</button></div>
+            </Link>
       </div>
       <div className="Container-2"> 
        <div className="me-bag"> Meus Itens</div>

@@ -1,7 +1,7 @@
 import { Container } from "./styled";
 import PromocoesAdm from "../../components/comum/produtosAdm";
 import { useEffect, useState } from "react";
-import CabecalhoInWhite from '../../components/comum/cabecalhoInWhite'
+import CabecalhoInWhite from '../../components/comum/cabecalhoAdm'
 import Rodape from '../../components/comum/rodape'
 import LugarInicialAdm from "../../components/comum/lugarInicialAdm"  
 

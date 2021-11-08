@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import  Box from '../../components/comum/box/index';
 
 import * as C from './styled.js';
@@ -25,7 +26,11 @@ function MinhaSacola() {
         <Box adicionar={adicionar}  remover={remover} cada={true}  preco="100,00"  titulo="Ingressos Hot Beach" qtd={qtd} />
         <div className="faixaa"> Total: R$310,00 </div>
         </div>
-        <div className="pagar">Pagamento</div>
+        <Link to={{
+          pathname: '/pagamento'
+        }}>
+          <button className="pagar">Pagamento</button>
+        </Link>
         </div>
     </C.Container>
   )

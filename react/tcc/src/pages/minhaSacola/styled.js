@@ -60,6 +60,7 @@ export const Container = styled.div`
   text-transform: uppercase;
   transition: all 1s;
   cursor: pointer;
+  background-color: transparent;
   &:hover{
     transform: scale(1.2);
   }

@@ -26,6 +26,7 @@ import meusPacotes from './pages/meusPacotes';
 import AdmPromocoes from './pages/admPromocoes';
 import CodigoAdm from './pages/admCodigo';
 import NovaSenhaAdm from './pages/admSenhaNova';
+import StatusCompra from './pages/statusCompra'
 
 
 import Teste from './components/comum/cabecalhoInWhite'
@@ -59,7 +60,8 @@ export default function Routes() {
                 <Route path="/lugares" exact={true} component={Lugares} />
                 <Route path="/promocoes" exact={true} component={AdmPromocoes} /> 
                 <Route path="/codigoAdm" exact={true} component={CodigoAdm} />  
-                <Route path="/novaSenhaAdm" exact={true} component={NovaSenhaAdm} />       
+                <Route path="/novaSenhaAdm" exact={true} component={NovaSenhaAdm} />  
+                <Route path="/statusCompra" exact={true} component={StatusCompra} />     
                 <Route path="/error" exact={true} component={Error} />
                 <Route path="/teste" exact={true} component={Teste} />
                 <Route path="/teste2" exact={true} component={Teste2} />
