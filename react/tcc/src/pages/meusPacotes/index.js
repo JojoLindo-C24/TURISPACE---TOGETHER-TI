@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+
 import CabecalhoInWhite from '../../components/comum/cabecalhoInWhite'
 
 import * as C from './styled.js';
