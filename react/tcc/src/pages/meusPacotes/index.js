@@ -3,19 +3,7 @@ import CabecalhoInWhite from '../../components/comum/cabecalhoInWhite'
 
 import * as C from './styled.js';
 
-
-
 function MeusPacotes() {
-
-  const [qtd, setQtd] = useState(0)
-    function adicionar(){
-        setQtd (qtd + 1)
-    }
-
-    function remover(){
-      setQtd (qtd - 1)
-  }
-
   return(
     <C.Container>
         <CabecalhoInWhite />
