@@ -1,23 +1,25 @@
-import { Container } from "./styled";
 import { Link } from "react-router-dom";
+import { Container } from "./styled";
 
 export default function EsqueceuSenhaAdm() {
     return(
+        
         <Container>
-            <div className="Tudo">
-            <div class="conteudo">
-                        <div class="redefinir-senha"><img src={'../../assets/images/icon-login.svg'} alt="" class="icon-login"/>Esqueceu a Senha</div>
-                        <div className="input">
-                            <input class="senha" type="text" placeholder="Insira o e-mail cadastrado"/>
-                            <div class="linha-senha"></div>
-                        </div>
-                        <Link to={{
-                            pathname: '/admcodigo'
-                        }}>
-                            <button class="botao-redefinir">Enviar</button>
-                        </Link>
-                    </div>
-                   </div> 
+            <div className="f1-container">
+                <div class="cabecalho">
+                    <img src={"../assets/images/icon-login.svg"} alt="" class="logo-usuario"/>
+                    <div class="esqueceu-senha">Esqueceu sua senha</div>
+                </div>
+                <div className="email">
+                    <input class="input-email" type="text" placeholder="Insira o e-mail cadastrado"/>
+                    <div class="linha-email"></div>
+                </div>
+                <Link to={{
+                    pathname: '/codigoAdm'
+                }}>
+                    <button class="botao-esqueceu-senha">Enviar</button>
+                </Link>
+            </div>
         </Container>
     )
 }

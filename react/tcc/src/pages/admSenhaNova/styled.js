@@ -21,56 +21,46 @@ const Container = styled.div`
     border-radius: 26px;
 }
 
-.cabecalho{
+.conteudo{
     display: flex;
-    flex-direction: row;
+    flex-direction: column; 
     align-items: center;
+    justify-content: center;
 }
 
-.logo-usuario{
-    width: 100px;
-    height: 100px;
-}
-
-.esqueceu-senha{
-    font: 42px Roboto-Thin;
+.redefinir-senha{
+    font: 28px Roboto-Light;
     color: white;
-    margin-left: 35px;
 }
 
-.email{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.linha-email{
-    width: 600px;
-    height: 1px;
-    background-color: white;
-}
-
-.input-email{
-    border: none;
-    background-color: transparent;
+.senha{
     font: 22px Roboto-Light;
     color: white;
+    background-color: transparent;
+    border: none;
     margin-top: 50px;
+    cursor: text;
     outline: none;
 }
 
-.botao-esqueceu-senha{
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 18px;
-    font: 24px Roboto-Thin;
+.linha-senha{
+    height: 1px;
+    width: 400px;
+    background-color: white;
+}
+
+.botao-redefinir{
+    font: 22px Roboto-Light;
     color: white;
-    padding: 10px 40px 10px 40px;
-    margin-top: 100px;
+    background-color: transparent;
+    border-radius: 12px;
+    padding: 0.4em 1em;
+    border: 2px solid white;
+    margin-top: 40px;
     cursor: pointer;
 }
 
-.botao-esqueceu-senha:hover{
+.botao-redefinir:hover{
     background-color: rgba(255, 255, 255, 0.1);
     transition: 0.5s;
 }
