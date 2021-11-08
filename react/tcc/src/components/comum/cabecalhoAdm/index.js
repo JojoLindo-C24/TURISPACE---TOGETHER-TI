@@ -24,7 +24,7 @@ export default function IndexCabecalhoAdm() {
                         <button className='botao-cabecalho'> LUGARES </button>   
                     </Link>
                     <Link to={{
-                        pathname: '/faleConosco'
+                        pathname: '/admMensagens'
                     }}>
                         <button className='botao-cabecalho'> FALE CONOSCO </button>   
                     </Link>
