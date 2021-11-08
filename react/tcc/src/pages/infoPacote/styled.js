@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Container = styled.div`
     background-size: cover;
     background-image: url(${'/assets/images/BackgroundInfoPac.png'});
-    width: 100vw;
+    width: 100%;
     height: 250vh;
     position: relative;
 
