@@ -21,6 +21,7 @@ import LoginAdm from './pages/admLogin'
 import EsqueceuSenhaAdm from './pages/admEsqueceuSenha';
 import InicialAdm from './pages/admInicial';
 import Lugares from './pages/lugares';
+import lugaresadm from './pages/lugaresAdm'
 
 
 import Teste from './components/comum/cabecalhoInWhite'
@@ -54,6 +55,7 @@ export default function Routes() {
                 <Route path="/error" exact={true} component={Error} />
                 <Route path="/teste" exact={true} component={Teste} />
                 <Route path="/teste2" exact={true} component={Teste2} />
+                <Route path="/lugaresadm" exact={true} component={lugaresadm} />
                 {/* <Route path="/teste3" exact={true} component={Teste3} /> */}
             </Switch>
         </BrowserRouter>

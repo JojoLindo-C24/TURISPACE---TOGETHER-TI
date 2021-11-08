@@ -10,7 +10,9 @@ function boxCarrosel(props) {
         </div>
         <div className="pt2"> 
           <div className="titulo"> {props.item.titulo} </div>
+          {props.adm === true? <div className="edit"> <img src="/assets/images/edit.png" alt="" /> </div>: ''}
           <Link className="ver-mais" to={{pathname: '/infolugar', state: props.item }}> <div className="ver-mais"> Ver mais sobre</div> </Link>
+
         </div>
       </Container>
   )
