@@ -167,7 +167,7 @@ flex-direction: column;
     color: white;
     background: transparent;
     border-radius: 7px;
-    border-color: white;
+    border: 2px solid white;
     padding: 0.3em 0.7em 0.3em 0.7em;
     cursor: pointer;
 }
