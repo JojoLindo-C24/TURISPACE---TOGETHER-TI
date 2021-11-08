@@ -6,7 +6,7 @@ export const Container = styled.div`
   min-height:100vh ;
 
 
-  .Title-Sp{
+.Title-Sp{
   background: rgba(0, 0, 0, 0.7);
   margin-left: auto;
   margin-right: auto;
@@ -35,6 +35,7 @@ export const Container = styled.div`
   align-items: center;
   margin-top:15px;
   display:flex;
+  padding: 1.5em 0.7em;
 }
 
 .Little-Text span{
