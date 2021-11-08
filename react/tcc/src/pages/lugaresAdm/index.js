@@ -206,11 +206,11 @@ function Lugares() {
     setProdutos(r);
   }
 
-  const adm = false;
-
   useEffect(() => {
     listar();
 }, [])
+
+const adm = true;
 
   return (
     <C.Container>
@@ -233,7 +233,7 @@ function Lugares() {
           <div className="Options"> <span> Shoppings </span> </div>
           <Carousel responsive={responsive} containerClass="carousel-box" >
            {produtos.map(i => 
-              <Caixa item={i}/>
+              <Caixa item={i} adm={adm}/>
             )}
           </Carousel>
         </div>
@@ -242,7 +242,7 @@ function Lugares() {
           <div className="Options"> <span> Shoppings </span> </div>
           <Carousel responsive={responsive} containerClass="carousel-box" >
            {produtos.map(i => 
-              <Caixa item={i}/>
+              <Caixa item={i} adm={adm}/>
             )}
           </Carousel>
         </div>

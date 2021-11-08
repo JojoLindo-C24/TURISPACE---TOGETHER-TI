@@ -16,6 +16,32 @@ const Container = styled.div`
     height: 14em;
   }
 
+  .edit img {
+    width: 40px;
+    height: auto;
+  }
+
+  .edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6em;
+    background: #fff;
+    border-radius: 40px;
+    position: absolute;
+    right: 0.5em;
+    width: 4em;
+    height: 4em;
+    bottom: 1em;
+    transform: scale(0.6);
+    transition: all 0.6s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(0.9);
+    }
+  }
+
   .pt2 {
     display: flex;
     flex-direction: column;
