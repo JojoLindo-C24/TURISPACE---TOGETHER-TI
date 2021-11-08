@@ -29,12 +29,13 @@ export const Container = styled.div`
 .Little-Text{
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  min-height: 100px;
   color: #FFFFFF;
   border-radius: 5px;
   align-items: center;
   margin-top:15px;
   display:flex;
+  flex-direction: column;
+  padding: 1.5em 0.7em;
 }
 
 .Little-Text span{

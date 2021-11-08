@@ -3,16 +3,37 @@ import styled from "styled-components";
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    background: rgba(0, 5, 9, 0.85);
-    border-radius: 20px;
-    align-items: center;
     border: none;
     cursor: pointer;
     margin: 2em;
+    position: relative;
 
-&:hover {
-    transform: scale(1.05);
-    transition: 0.6s;
+&:hover{
+    .botao-editar{
+        visibility: visible;
+    }
+}
+
+    .botao-editar{
+    background-color: transparent;
+    border: none;
+    visibility: hidden;
+    cursor: pointer;
+    position: absolute;
+}
+
+.img-bt-editar{
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
+
+.bloco-lugar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 5, 9, 0.85);
+    border-radius: 20px;
 }
 
 .img-turismo{

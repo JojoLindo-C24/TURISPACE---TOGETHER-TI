@@ -1,12 +1,33 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Container = styled.div`
-  display: flex;
+display: flex;
   flex-direction: column;
   margin: 2em;
   align-items: center;
   border-radius: 20px;
 
+&:hover{
+    .botao-editar{
+    visibility: visible;
+    }
+}
+
+
+.botao-editar{
+    margin-top: -40%;
+    margin-left: 85%;
+    background-color: transparent;
+    border: none;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.img-bt-editar{
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
 
 .bloco{
     display: flex;
@@ -14,14 +35,8 @@ const Container = styled.div`
     background-color: rgba(0, 5, 9, 0.85);
     border-radius: 20px;
 }
-
-.bloco:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
 .imagem{
-    height: 230px;
+    height: 240px;
     width: 160px;
     object-fit: cover;
     object-position: center;

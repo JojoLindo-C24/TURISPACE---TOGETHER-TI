@@ -1,11 +1,11 @@
 import { Container } from "./styled";
-import Pacotes from "../../components/comum/produtos";
+import PromocoesAdm from "../../components/comum/produtosAdm";
 import { useEffect, useState } from "react";
 import CabecalhoInWhite from '../../components/comum/cabecalhoInWhite'
 import Rodape from '../../components/comum/rodape'
-import LugarInicial from "../../components/comum/lugarInicial"
+import LugarInicialAdm from "../../components/comum/lugarInicialAdm"  
 
-export default function Home() {
+export default function AdmPromocoes() {
     const [produtos, setProdutos] = useState([]);
 
     function listar() {
@@ -169,7 +169,7 @@ export default function Home() {
               <div className="Turispace-promocoes">Promoções da Temporada</div>
               <div className="lista-produtos">
                   {produtos.map(item => 
-                          <Pacotes 
+                          <PromocoesAdm 
                           key={item.id}
                           info={item} />
                       )}
@@ -179,7 +179,7 @@ export default function Home() {
               <div className="Turispace-promocoes">Turismo em São Paulo</div>
               <div className="lugaresInicial">
                 {produtos1.map(item => 
-                            <LugarInicial 
+                            <LugarInicialAdm 
                             key={item.id}
                             lugares={item} />
                         )}
