@@ -6,8 +6,8 @@ const BoxAvaliacao = styled.div`
     background: rgba(255, 255, 255, 0.85);
     border-radius: 14px;
     justify-content: center;
-    width:78em;
-    height: 26em;
+    width:80%;
+    height: 25em;
     overflow-y: auto;
     
 }
@@ -50,5 +50,13 @@ const BoxAvaliacao = styled.div`
     padding-left: 50em;
     font-size: 16px;
 }
+
+.tabela{
+  margin-top:-5%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 `
 export {BoxAvaliacao}

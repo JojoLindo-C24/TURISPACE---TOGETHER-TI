@@ -4,6 +4,7 @@ import {BoxAvaliacao} from "./styled";
 export default function Index(){
     return (
         <BoxAvaliacao>
+            <div className="tabela">
             <div className="container">
                  <div className="box">
                     <div className="box-mensagem">
@@ -68,6 +69,7 @@ export default function Index(){
                     </div>
                     <div className="data">24/09/2021</div>
                  </div>
+            </div>
             </div>
         </BoxAvaliacao>
     )

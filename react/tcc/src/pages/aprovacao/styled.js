@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-   background-image: url(${'/assets/images/Fundooo.jpg'});
+    background-image: url(${'/assets/images/Fundooo.jpg'});
     background-size: cover;
-    height: 100vh;
+    min-height: 140vh;
 
  .Container{
     height: 100vh;

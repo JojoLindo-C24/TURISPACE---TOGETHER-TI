@@ -3,38 +3,38 @@ import BackgroundFaleConosco from "../../assets/images/fundo_fale_conosco.png"
 
 const AdmMensagens = styled.div`
     background-image: url(${BackgroundFaleConosco});
-    background-repeat: no-repeat;
     background-size: cover;
-   
-    
+    min-height: 100vh;
 
 .Container{
-    width: 98vw;
     height: 100vh;
-    padding: 2.9em 4em;
-   
-    
-    
+    align-items: center;
+    display : flex;
+    flex-direction: column;
 }
 
 .conteudo{
-    height: 40em;
-    width: 85em;
+    height: 90%;
+    width: 85%;
     background-color: rgba(4, 30, 57, 0.91);
-    border-radius: 0.4em;
-    padding: 2.9em 4em;
-   
-    
+    border-radius: 10px;
+    margin: 4em auto;
 }
 
 .titulo {
-    display: flex;
-    padding-top: 2em;
-    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+  font-size: 1.8em;
+  color: #FFFFFF;
+  font-weight: 100;
+  padding: 2em;
 }
 
-.barrinha{
-    
+.Barrinha{
+    border-radius: 10px;
 }
 
 .nomeAvaliacao{

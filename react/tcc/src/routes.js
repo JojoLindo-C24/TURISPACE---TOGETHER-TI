@@ -21,7 +21,8 @@ import LoginAdm from './pages/admLogin'
 import EsqueceuSenhaAdm from './pages/admEsqueceuSenha';
 import InicialAdm from './pages/admInicial';
 import Lugares from './pages/lugares';
-import lugaresadm from './pages/lugaresAdm'
+import lugaresadm from './pages/lugaresAdm';
+import meusPacotes from './pages/meusPacotes';
 
 
 import Teste from './components/comum/cabecalhoInWhite'
@@ -50,7 +51,8 @@ export default function Routes() {
                 <Route path="/loginAdm" exact={true} component={LoginAdm} />
                 <Route path="/pagamento" exact={true} component={Pagamento} />
                 <Route path="/EsqueceuSenhaAdm" exact={true} component={EsqueceuSenhaAdm} />
-                <Route path="/InicialAdm" exact={true} component={InicialAdm} />       
+                <Route path="/InicialAdm" exact={true} component={InicialAdm} /> 
+                <Route path="/meusPacotes" exact={true} component={meusPacotes} />       
                 <Route path="/lugares" exact={true} component={Lugares} />          
                 <Route path="/error" exact={true} component={Error} />
                 <Route path="/teste" exact={true} component={Teste} />

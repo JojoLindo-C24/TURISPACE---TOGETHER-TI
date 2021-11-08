@@ -1,11 +1,11 @@
-import { CabecalhoAdm } from "./styled";
-
+import React from 'react';
 import { Link } from "react-router-dom";
 
-export default function IndexCabecalhoAdm() {
-    return(
-        <CabecalhoAdm>
-            <div class="Cabecalho">
+
+function Cabecalho2adm() {
+  return (
+      <Cabecalho2adm>
+              <div class="Cabecalho">
                 <div class="f1-Cabecalho">
                     <div class="Logo"> <img src={"../../assets/images/logo1.svg"} alt=""/> </div>
                     <Link to={{
@@ -24,7 +24,7 @@ export default function IndexCabecalhoAdm() {
                         <button className='botao-cabecalho'> LUGARES </button>   
                     </Link>
                     <Link to={{
-                        pathname: '/admMensagens'
+                        pathname: '/admfaleconosco'
                     }}>
                         <button className='botao-cabecalho'> FALE CONOSCO </button>   
                     </Link>
@@ -34,13 +34,15 @@ export default function IndexCabecalhoAdm() {
                         <button className='botao-cabecalho'> APROV. COMPRA </button>   
                     </Link>
                     <Link to={{
-                        pathname: '/gerenciamentoUsuario'
+                        pathname: '/admgerenciamento'
                     }}>
                         <button className='botao-cabecalho'> GEREN. CONTAS </button>   
                     </Link>
                     <div class="Conta"> <img src={"../../assets/images/usuario1.svg"} alt=""/> </div>
                 </div>
             </div>
-        </CabecalhoAdm>
-    )
+      </Cabecalho2adm>
+  )
 }
+
+export default Cabecalho2adm;

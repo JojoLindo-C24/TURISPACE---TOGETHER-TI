@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Cabecalho from '../../components/comum/cabecalhoInDark';
+import CabecalhoAdm from '../../components/comum/cabecalhoAdm';
 import Rodape from '../../components/comum/rodape';
 import Carousel from "react-multi-carousel";
 import Caixa from '../../components/comum/boxCarrosel'
@@ -214,7 +214,7 @@ const adm = true;
 
   return (
     <C.Container>
-      <Cabecalho />
+      <CabecalhoAdm />
       <div className="Conteudo-f1">
         <div className="Title-Sp"> São Paulo </div>
         <div className="Little-Text"> <span> Sabemos que a cidade de São Paulo é um estado com muitos pontos turisticos. Diversas instituições culturais, tradições arquitetônica, predios simbolicos, musues e muito mais. Conheça as melhores indicações dessa grande metrópole: </span> </div>

@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-const CabecalhoAdm = styled.div`
- background: #1A446D;
-    width:100%;
+const Cabecalho2adm = styled.div`
+    justify-content: center;
+    background: #1A446D;
+    width: 100%;
     height: 10vw;
-    
+
 .f1-Cabecalho{
     display: flex;
     flex-direction: row;
@@ -15,7 +16,7 @@ const CabecalhoAdm = styled.div`
 .botao-cabecalho{
     border: none;
     background-color: transparent;
-    font: 15px Montserrat-Medium;
+    font: 20px Montserrat-Medium;
     cursor: pointer;
     color: white;
 }
@@ -24,4 +25,4 @@ const CabecalhoAdm = styled.div`
     text-decoration: underline;
 }
 `
-export {CabecalhoAdm}
+export {Cabecalho2adm}

@@ -1,5 +1,6 @@
 import React from 'react';
 import CabecalhoAdm from '../../components/comum/cabecalhoAdm';
+import BotaoVoltar from '../../components/comum/botaoVoltar';
 
 import * as C from './styled.js';
 
@@ -82,6 +83,7 @@ function AprovacaoCompra() {
               </div>
       </div>
     </div>
+    <BotaoVoltar/>
     </C.Container>
   )
 };
