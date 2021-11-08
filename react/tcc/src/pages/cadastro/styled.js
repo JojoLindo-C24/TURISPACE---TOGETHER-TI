@@ -7,7 +7,7 @@ flex-direction: column;
 
 .Container{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: url(${Fundo});
     background-repeat: no-repeat;
     background-size: cover;

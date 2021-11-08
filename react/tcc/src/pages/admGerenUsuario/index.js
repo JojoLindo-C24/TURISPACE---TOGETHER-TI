@@ -1,10 +1,13 @@
 import React from 'react';
+import CabecalhoAdm from '../../components/comum/cabecalhoAdm';
+import BotaoVoltar from '../../components/comum/botaoVoltar';
 
 import * as C from './styled.js';
 
 function CadastroAdm() {
   return(
     <C.Container> 
+      <CabecalhoAdm></CabecalhoAdm>
         <div className="Container">
          <div className="Conteudo">
         <div className="Box-Titulo"><img class="Barrinha" src={"../../assets/images/barrinha.png"} alt=""/> Contas Cadastradas</div>
@@ -68,6 +71,7 @@ function CadastroAdm() {
               </div>
       </div>
     </div>
+    <BotaoVoltar/>
     </C.Container>
   )
 };

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export default function IndexRodape() {
     return(
         <Rodape>
-            <div class="rodape">
                 <div class="coluna1">
                     <div class="c1-cima">Siga nossas redes sociais </div>
                     <div class="c1-baixo">
@@ -36,7 +35,6 @@ export default function IndexRodape() {
                     <div class="c5-cima">Formas de pagamento</div>
                     <img src={"../../../assets/images/cartoes 1.png"} alt="" class="c5-baixo"/>
                 </div>
-            </div>
         </Rodape>
     )
 }

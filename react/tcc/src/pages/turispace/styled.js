@@ -15,6 +15,7 @@ const Container = styled.div`
   align-items: flex-start;
   background-image: url(${BackgroundInitial});
   align-items: center;
+  background-size: cover;
 }
 
 .lista-produtos {

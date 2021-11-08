@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 const Rodape = styled.div`
-.rodape{
+
     background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: row;
     height: 130px;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
-}
+
 
 .coluna1{
     display: flex;
