@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background-image: url(${'/assets/images/wallpaperflare6.jpg'});
   background-size: cover;
-  height: 100vh;
+  min-height:100vh ;
 
 
   .Title-Sp{
@@ -52,19 +52,23 @@ export const Container = styled.div`
   width: 10vw;
   height: 30px;
   border-radius: 10px;
-  margin-bottom: 10px;
-}
 
-.Options{
+  display: flex;
   text-align: center;
+  align-items: center;
   color: #FFFFFF;
   font-size: 20px;
-  margin-bottom: 40%;
+  height: 2em;
+  justify-content: center;
 }
 
 .Conteudo-f2{
     width: 80%;
     margin: 0px auto;
+}
+
+.box {
+  height: 20em;
 }
 
 
