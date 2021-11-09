@@ -102,8 +102,8 @@ button{
 
 .tabela::-webkit-scrollbar
 {
-	width: 10px;
-	background-color: #000000;
+	width: 5px;
+	background-color: #fff;
 }
 
 .tabela::-webkit-scrollbar-thumb

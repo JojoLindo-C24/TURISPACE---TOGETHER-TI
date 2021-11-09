@@ -49,6 +49,15 @@ export const Container = styled.div`
 
 .card-number{
   margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.line{
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .card-number ::placeholder{
@@ -57,9 +66,9 @@ export const Container = styled.div`
 
 .card-number input{
   width: 30.3em;
-  border: 0 none;
-  outline: 0;
-  border : solid;
+  border: none;
+  outline: none;
+  
   border-left: 1px;
   border-right: 1px;
   border-top: 1px;
@@ -74,11 +83,8 @@ export const Container = styled.div`
 
 .name-number input{
   width: 30.3em;
-  border: 0 none;
-  outline: 0;
-  border : solid;
-  border-left: 1px;
-  border-right: 1px;
+  border: none;
+  outline: none;
   border-top: 1px;
   font-size: 15px;
   background-color: transparent;
@@ -178,22 +184,25 @@ export const Container = styled.div`
 }
 
  .buton-cancelar{
-  width: 25vh;
-  height: 5vh;
-  
+  padding: 0.3em 1.6em;
+  border: none;
   background: rgba(255, 255, 255, 0.35);
   border-radius: 10px;
-  font-size: 22px;
+  font: 22px OpenSans-Bold;
   color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
  }
 
 .Finalizar button{
   margin-top: 3em;
   margin-left: 7vh;
-  width: 50vh;
-  height: 7vh;
+  padding: 0.4em 1.7em;
   background: rgba(255, 255, 255, 0.65);
   border-radius: 10px;
+  border: none;
+  font: 22px OpenSans-Bold;
+  color: rgba(0, 5, 9, 0.75);
+  cursor: pointer;
 }
 
 
