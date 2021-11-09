@@ -28,6 +28,7 @@ import CodigoAdm from './pages/admCodigo';
 import NovaSenhaAdm from './pages/admSenhaNova';
 import StatusCompra from './pages/statusCompra';
 import AdmInserir from './pages/admInserir';
+import InfoLugar from './pages/infolugar';
 
 
 import Teste from './components/comum/cabecalhoInWhite'
@@ -63,7 +64,8 @@ export default function Routes() {
                 <Route path="/codigoAdm" exact={true} component={CodigoAdm} />  
                 <Route path="/admInserir" exact={true} component={AdmInserir} />  
                 <Route path="/novaSenhaAdm" exact={true} component={NovaSenhaAdm} />  
-                <Route path="/statusCompra" exact={true} component={StatusCompra} />     
+                <Route path="/statusCompra" exact={true} component={StatusCompra} />  
+                <Route path="/infolugar" exact={true} component={InfoLugar} />
                 <Route path="/error" exact={true} component={Error} />
                 <Route path="/teste" exact={true} component={Teste} />
                 <Route path="/teste2" exact={true} component={Teste2} />

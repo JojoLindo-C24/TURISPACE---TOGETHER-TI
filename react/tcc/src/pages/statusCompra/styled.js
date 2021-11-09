@@ -5,20 +5,20 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     background-color: #000509;
-    width: 100vw;
-    height: 110vh;
+    width: 100%;
+    height: 130vh;
 
 .content-line{
     background-color: rgba(25, 47, 69, 0.23);
     border: 5px solid #3990ED;
-    width: 95vw;
+    width: 95%;
     height: 80vh;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 5em;
 }
 .content-box{
     background-color: white;
