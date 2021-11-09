@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 export default function LugarInicial(props) {
     return(
         <Container>
-            <Link>
+            <Link to={{
+                    pathname: '/admInserir'
+                }}>
                 <button className="botao-editar">
                     <img className="img-bt-editar" src={"../../assets/images/Group 21.png"} alt="" />
                 </button>
