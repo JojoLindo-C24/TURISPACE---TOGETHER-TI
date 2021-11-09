@@ -22,8 +22,8 @@ export const Container = styled.div`
 }
 
 .Conteudo{
-  margin: -9em auto;
   padding: 4em;
+  background-color: rgba(0, 5, 9, 0.75);
 }
 
 table {

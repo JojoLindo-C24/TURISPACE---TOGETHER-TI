@@ -3,12 +3,20 @@ import styled from 'styled-components';
 export const Container = styled.div`
  background-image: url(${'/assets/images/pinacoteca.jpg'});
  background-size: cover;
-
+ height: 130vh;
 
  body{margin: 0px}
 *{
     box-sizing: border-box;
     cursor: default;
+}
+
+.f1-container{
+  background-color: rgba(0, 5, 9, 0.75);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .Conteudo-f1{
@@ -193,8 +201,13 @@ export const Container = styled.div`
  .Container{
    display: flex;
    flex-direction: row;
-   width: 100%;
-   height: 100vh;
+   justify-content: space-between;
+   width: 60%;
+ }
+
+ .Index{
+   display: flex;
+   flex-direction: row;
    justify-content: space-around;
  }
 
@@ -203,7 +216,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 400px;
   margin-top: 1em;  
   background: rgba(255, 255, 255, 0.85);
   border-radius: 15px;
