@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import CabecalhoInWhite from '../../components/comum/cabecalhoInWhite'
 import BotaoVoltar from '../../components/comum/botaoVoltar'
 
@@ -6,33 +6,37 @@ import * as C from './styled.js';
 
 
 
+
 function InfoLugar(props) {
-  const [lugares] = useState(props.location.state);
+
+  let avaliacao = 5
+
+  const lugares = props.location.state;
   return(
     <C.Container>
       <div className="f1-container">
         <CabecalhoInWhite/>
         <div className="Conteudo">
           <div className="esquerda">
-            <img className="img-lugares" src={lugares.imagem} alt="" />
+            <img className="img-lugares" src={lugares.imagem1} alt="" />
             <div className="avaliacao">
               <div className="tittle">AVALIAÇÃO</div>
-              <div className="text"></div>
+              <div className="text"> {avaliacao} </div>
             </div>
           </div>
           <div className="direita">
-            <div className="nome">{lugares.nome}</div>
-            <div className="informacoes">
+            <div className="nome">{lugares.titulo}</div>
+            <div className="box">
               <div className="tittle">INFORMAÇÕES</div>
-              <div className="text"></div>
+              <div className="text">{lugares.descricao}</div>
             </div>
-            <div className="horario">
+            <div className="box">
               <div className="tittle">HORÁRIO</div>
-              <div className="text"></div>
+              <div className="text">{lugares.horario}</div>
             </div>
-            <div className="endereco">
-              <div className="tittle"></div>
-              <div className="text"></div>
+            <div className="box">
+              <div className="tittle">ENDEREÇO</div>
+              <div className="text">{lugares.endereco}</div>
             </div>
           </div>
         </div>

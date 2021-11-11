@@ -123,32 +123,50 @@ export default function Home() {
                 {
                     id: 1,
                     imagem: '/assets/images/museuu.png',
-                    nome: "Museu de Artes de São Paulo"
+                    nome: "Museu de Artes de São Paulo",
+                    descricao: "maria vai com as outras",
+                    horario: "7hrs às 19hrs",
+                    endereco: "O parque temático Hopi Hari está situado na Rodovia dos Bandeirantes Km 72, na cidade de Vinhedo - São Paulo."
                 },
                 {
                     id: 2,
                     imagem: '/assets/images/Museu do Futebol.png',
-                    nome: "Museu do Futebol"
+                    nome: "Museu do Futebol",
+                    descricao: "maria vai com as outras",
+                    horario: "7hrs às 19hrs",
+                    endereco: "O parque temático Hopi Hari está situado na Rodovia dos Bandeirantes Km 72, na cidade de Vinhedo - São Paulo."
                 },
                 {
                     id: 3,
                     imagem: '/assets/images/Museu do Catavento.png',
-                    nome: "Museu do Catavento"
+                    nome: "Museu do Catavento",
+                    descricao: "maria vai com as outras",
+                    horario: "7hrs às 19hrs",
+                    endereco: "O parque temático Hopi Hari está situado na Rodovia dos Bandeirantes Km 72, na cidade de Vinhedo - São Paulo."
                 },
                 {
                     id: 4,
                     imagem: '/assets/images/Shopping Ibira.png',
-                    nome: "Shopping Ibirapuera"
+                    nome: "Shopping Ibirapuera",
+                    descricao: "maria vai com as outras",
+                    horario: "7hrs às 19hrs",
+                    endereco: "O parque temático Hopi Hari está situado na Rodovia dos Bandeirantes Km 72, na cidade de Vinhedo - São Paulo."
                 },
                 {
                     id: 5,
                     imagem: '/assets/images/Shopping JK.png',
-                    nome: "Shopping JK Iguatemi"
+                    nome: "Shopping JK Iguatemi",
+                    descricao: "maria vai com as outras",
+                    horario: "7hrs às 19hrs",
+                    endereco: "O parque temático Hopi Hari está situado na Rodovia dos Bandeirantes Km 72, na cidade de Vinhedo - São Paulo."
                 },
                 {
                     id: 6,
                     imagem: '/assets/images/ibirapuera.jpg',
-                    nome: "Parque Ibirapuera"
+                    nome: "Parque Ibirapuera",
+                    descricao: "maria vai com as outras",
+                    horario: "7hrs às 19hrs",
+                    endereco: "O parque temático Hopi Hari está situado na Rodovia dos Bandeirantes Km 72, na cidade de Vinhedo - São Paulo."
                 }
             ]
 
