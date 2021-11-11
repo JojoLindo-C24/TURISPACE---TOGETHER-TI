@@ -3,8 +3,30 @@ import { Link } from "react-router-dom";
 import { Cadastro } from "./styled";
 
 import { IndexRodape } from "../../components/comum/rodape/index";
+import { useState } from "react";
+import { useHistory } from "react-router";
+
+import Api from '../../service/api'
+const api = new Api();
 
 export default function Index() {
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+    const [celular, setCelular] = useState('');
+    const [nome, setNome] = useState('');
+
+    const navigation = useHistory();
+
+    const cadastrar = async () => {
+        let t = await api.cadastro(email, senha, celular, nome);
+        if(t.erro){
+            alert(`${t.erro}`);
+        } else {
+            alert('Deu Certo!')
+            navigation.push('/login')
+        }
+    }
+
     return(
         <Cadastro>
             <div class="Container">
@@ -23,15 +45,15 @@ export default function Index() {
                         </div>
                         <div class="conteudo-direita">
                             <div class="cadastrar">Cadastre-se</div>
-                            <input class="input-email" type="text" placeholder="Insira seu e-mail"/>
-                            <input class="input-senha" type="text" placeholder="Insira sua senha"/>
-                            <input class="input-senha" type="text" placeholder="Insira seu celular"/>
-                            <input class="input-senha" type="text" placeholder="Insira seu nome"/>
-                            <Link to={{
+                            <input value={email} onChange={e => setEmail(e.target.value)} class="input-email" type="text" placeholder="Insira seu e-mail"/>
+                            <input value={senha} onChange={e => setSenha(e.target.value)} type="password" class="input-senha" type="text" placeholder="Insira sua senha"/>
+                            <input value={celular} onChange={e => setCelular(e.target.value)}class="input-senha" type="text" placeholder="Insira seu celular"/>
+                            <input value={nome} onChange={e => setNome(e.target.value)} class="input-senha" type="text" placeholder="Insira seu nome"/>
+                            {/* <Link to={{
                                 pathname: '/login'
-                            }}>
-                               <button class="botao-cadastrar">Cadastrar</button>
-                            </Link>
+                            }}> */}
+                               <button onClick={cadastrar} class="botao-cadastrar">Cadastrar</button>
+                            {/* </Link> */}
                             <Link to={{
                                 pathname: '/login'
                             }}>

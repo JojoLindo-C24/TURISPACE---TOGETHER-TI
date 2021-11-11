@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/LucianeC/TuriSPace.TCC#readme",
   "dependencies": {
+    "axios": "^0.24.0",
     "js-cookie": "^3.0.1",
     "react-multi-carousel": "^2.6.5",
     "react-router-dom": "^5.3.0",

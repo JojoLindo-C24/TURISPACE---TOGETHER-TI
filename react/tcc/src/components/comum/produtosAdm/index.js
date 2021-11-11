@@ -12,7 +12,9 @@ export default function Pacotes(props) {
                 <img className="imagem" src={props.info.imagem4} alt="" />
                 <img className="imagem" src={props.info.imagem5} alt="" /> */}
                 <div className="conteudo">
-                <Link>
+                <Link to={{
+                    pathname: '/admInserir'
+                }}>
                     <button className="botao-editar">
                         <img className="img-bt-editar" src={"../../assets/images/Group 21.png"} alt="" />
                     </button>
