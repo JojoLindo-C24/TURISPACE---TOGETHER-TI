@@ -18,4 +18,6 @@ export default class Api {
         let r = await api.post('/insert', { nome, avaliacao, endereco, imagem, informacao, horarioFds, horarioDds, categoria })
         return r.data;
     }
+
+    
 }

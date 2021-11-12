@@ -1,7 +1,8 @@
 
-// import './map.css';
-// import { Map, GoogleApiWrapper, Marker } from 'google-maps';
 // import React, { Component } from 'react';
+// import './map.css';
+// import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+
  
 
 
@@ -19,15 +20,17 @@
 //     }
 
 
+
 //     displayMarkers = () => {
 //       return this.state.stores.map((store, index) => {
 //         return <Marker key={index} id={index} position={{
-//           lat: 28.37286,
-//           lng: 3.347873
+//           lat: store.latitude,
+//           lng: store.longitude
 //         }}
 //         />
 //       })
 //     }
+
 
 //     render() {
 //       return (
@@ -38,6 +41,9 @@
 //           initialCenter={{ lat: -27.0922394, lng: -52.6166878 }}
 //         >
           
+        
+
+
 //           {this.displayMarkers()} 
 //         </Map>
   
@@ -46,6 +52,10 @@
 //   }
 
   
-//   export default GoogleApiWrapper (MapContainer);
+  
+
+//   ​export​ ​default​ ​GoogleApiWrapper​(​(​props​)​ ​=>​ ​(​{ 
+//     ​  ​apiKey​: ​'AIzaSyDM2wq1a7KW5WFcEl-869zE8onEzSC0tzU'​, 
+//     ​}​)​)​(​MapContainer​)
 
 
