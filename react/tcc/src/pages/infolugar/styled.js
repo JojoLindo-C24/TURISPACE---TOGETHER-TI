@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background-image: url(${'/assets/images/wallpaperflare13.jpg'});
   background-size: cover;
-  height: 100vh;
+  height: 120vh;
 
 .Conteudo{
     border: 3px solid #FFFFFF;
@@ -41,13 +41,25 @@ export const Container = styled.div`
   height: 35vh;
 }
 
+.Barrinha{
+  border-radius: 10px;
+  width: 7%;
+}
+
 .tittle{
   font-size: 26px;
 
 }
 
 .nome{
-  font-size: 38px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+  font-size: 2em;
+  color: #FFFFFF;
+  font-size: 30px;
 }
 
 .box {

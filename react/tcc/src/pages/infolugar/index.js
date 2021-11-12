@@ -25,7 +25,7 @@ function InfoLugar(props) {
             </div>
           </div>
           <div className="direita">
-            <div className="nome">{lugares.titulo}</div>
+            <div className="nome"><img class="Barrinha" src={"../../assets/images/barrinha.png"} alt=""/>{lugares.titulo}</div>
             <div className="box">
               <div className="tittle">INFORMAÇÕES</div>
               <div className="text">{lugares.descricao}</div>
