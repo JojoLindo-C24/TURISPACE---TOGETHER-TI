@@ -1,6 +1,7 @@
 import { FaleConosco } from "./styled";
 import CabecalhoInWhite from '../../components/comum/cabecalhoInWhite';
 import { IndexRodape } from "../../components/comum/rodape/index";
+// import Mapa  from "../../components/comum/google_maps";
 
 
 export default function Index() {
@@ -13,7 +14,7 @@ export default function Index() {
                </div>
                <div className= "conteudo">
                     <div className= "Parte1">
-                        <div className= "mapa"> <img class ="mapa" src={"./assets/images/mapa.png"} alt="" ></img></div>
+                        {/* <Mapa></Mapa> */}
                         <div className= "cel"> +55 (11) 95247-9539</div>
                         <div className="email"> turiSPace@gmail.com </div>
                     </div>

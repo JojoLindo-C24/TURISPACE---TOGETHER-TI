@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import GlobalFonts from './fonts/fonts'
-import Routes from './routes'
+import GlobalFonts from './fonts/fonts';
+import Routes from './routes';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
