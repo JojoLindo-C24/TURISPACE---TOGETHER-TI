@@ -2,7 +2,28 @@ import { Link } from 'react-router-dom'
 
 import {Login} from './styled'
 
+import { useState } from 'react'
+import { useHistory } from 'react-router'
+
+import Api from '../../service/api'
+const api = new Api();
+
 export default function Index() {
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+
+    const navigation = useHistory();
+
+    const logar = async () => {
+        let t = await api.login(email, senha);
+        if(t.erro) {
+            alert(`${t.erro}`)
+        } else {
+            alert('Deu certuuuu')
+            navigation.push('/inicial')
+        }
+    }
+
     return(
             <Login>
                 <div class="f1-container">
@@ -12,9 +33,9 @@ export default function Index() {
                                 <img src={'../../assets/images/icon-login.svg'} alt="" class="icon-login"/>
                                 <div class="login">Login</div>
                             </div>
-                            <input class="input-email" type="text" placeholder="Digite seu e-mail"/>
+                            <input class="input-email" value={email} onChange={e => setEmail(e.target.value)} type="text" placeholder="Digite seu e-mail"/>
                             <div class="linha-email"></div>
-                            <input class="input-senha" type="text" placeholder="Digite sua senha"/>
+                            <input class="input-senha" value={senha} onChange={e => setSenha(e.target.value)} type="text" placeholder="Digite sua senha"/>
                             <div class="linha-senha"></div>
                             <Link to={{
                                 pathname: '/esqueceuSenha'
@@ -22,11 +43,11 @@ export default function Index() {
                                 <a className="esqueceu-senha" href="http://127.0.0.1:5500/html/esqueceu%20_senha/index.html">Esqueceu sua senha?</a>
                             </Link>
                         </div>
-                            <Link to={{
+                            {/* <Link to={{
                                 pathname: '/inicial'
-                            }}>
-                                <button class="botao-logar">Entrar</button>
-                            </Link> 
+                            }}> */}
+                                <button onClick={logar} class="botao-logar">Entrar</button>
+                            {/* </Link>  */}
                     </div>
                 </div>
             </Login>

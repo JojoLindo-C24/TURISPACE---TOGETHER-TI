@@ -46,7 +46,7 @@ export default function Index() {
                         <div class="conteudo-direita">
                             <div class="cadastrar">Cadastre-se</div>
                             <input value={email} onChange={e => setEmail(e.target.value)} class="input-email" type="text" placeholder="Insira seu e-mail"/>
-                            <input value={senha} onChange={e => setSenha(e.target.value)} type="password" class="input-senha" type="text" placeholder="Insira sua senha"/>
+                            <input value={senha} onChange={e => setSenha(e.target.value)}  class="input-senha" type="password" placeholder="Insira sua senha"/>
                             <input value={celular} onChange={e => setCelular(e.target.value)}class="input-senha" type="text" placeholder="Insira seu celular"/>
                             <input value={nome} onChange={e => setNome(e.target.value)} class="input-senha" type="text" placeholder="Insira seu nome"/>
                             {/* <Link to={{
