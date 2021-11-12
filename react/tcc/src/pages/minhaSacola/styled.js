@@ -16,7 +16,7 @@ export const Container = styled.div`
   background: rgba(196, 196, 196, 0.5);
   border-radius: 20px;
   width: 70%;
-  height: 70vh;
+  height: 70%;
   margin: 3em auto;
   padding: 4em;
 }
@@ -30,7 +30,7 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 24%;
+  width: 26%;
   font-size: 2em;
   color: #FFFFFF;
   font-weight: 100;

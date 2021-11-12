@@ -12,7 +12,7 @@ export const Container = styled.div`
   margin: 1em 0px;
 
   .Titulo{
-      font-size: 30px;
+      font-size: 24px;
       width: 20%;
   }
 
