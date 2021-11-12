@@ -2,6 +2,11 @@ import {BoxAvaliacao} from "./styled";
 
 
 export default function Index(){
+
+    // const [chat, setChat] = useState([]);
+    // const [msg, setMsg] = useState('')
+
+
     return (
         <BoxAvaliacao>
             <div className="tabela">
