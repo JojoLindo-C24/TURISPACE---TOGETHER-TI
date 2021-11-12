@@ -213,5 +213,10 @@ flex-direction: column;
     cursor: pointer;
     text-decoration: none;
 }
+
+@media (max-width:1000px){
+    transform: scale(0.8);
+    }
+
 `
 export {Cadastro};

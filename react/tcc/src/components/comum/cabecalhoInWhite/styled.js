@@ -14,7 +14,7 @@ const CabecalhoInWhite = styled.div`
 .botao-cabecalho{
     border: none;
     background-color: transparent;
-    font: 22px Montserrat-Medium;
+    font: 26px Montserrat-Medium;
     cursor: pointer;
     color: white;
 }

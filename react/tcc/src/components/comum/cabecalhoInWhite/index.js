@@ -24,11 +24,6 @@ export default function IndexCabecalhoInWhite() {
                         <button className='botao-cabecalho'> FALE CONOSCO </button>   
                     </Link>
                     <Link to={{
-                        pathname: '/meusPacotes'
-                    }}>
-                        <button className='botao-cabecalho'> MEUS PACOTES </button>   
-                    </Link>
-                    <Link to={{
                         pathname: '/minhaConta'
                     }}>
                         <button className='botao-cabecalho'> MINHA CONTA </button>   

@@ -66,5 +66,16 @@ export const Container = styled.div`
   }
 }
 
+@media (max-width:1000px){
+    transform: scale(0.8);
+    }
+    .Conteudo{
+      width: 80%;
+      height: 60%;
+    }
+    .pagar{
+      width: 15em;
+    }
+
 `;
 
