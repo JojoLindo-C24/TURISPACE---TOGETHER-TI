@@ -35,7 +35,7 @@ export default function Index() {
                             </div>
                             <input class="input-email" value={email} onChange={e => setEmail(e.target.value)} type="text" placeholder="Digite seu e-mail"/>
                             <div class="linha-email"></div>
-                            <input class="input-senha" value={senha} onChange={e => setSenha(e.target.value)} type="text" placeholder="Digite sua senha"/>
+                            <input class="input-senha" value={senha} onChange={e => setSenha(e.target.value)} type="password" placeholder="Digite sua senha"/>
                             <div class="linha-senha"></div>
                             <Link to={{
                                 pathname: '/esqueceuSenha'
