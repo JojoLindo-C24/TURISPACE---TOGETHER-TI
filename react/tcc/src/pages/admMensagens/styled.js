@@ -7,7 +7,7 @@ const AdmMensagens = styled.div`
     min-height: 100vh;
 
 .Container{
-    height: 100vh;
+    height: 50em;
     align-items: center;
     display : flex;
     flex-direction: column;
