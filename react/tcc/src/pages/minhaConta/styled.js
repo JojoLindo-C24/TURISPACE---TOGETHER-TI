@@ -65,6 +65,18 @@ const MinhaConta = styled.div`
     height: 26%;
 }
 
+.informacoesCliente{
+    background-color: rgba(0, 5, 9, 0.85);
+    border: none;
+    display: flex;
+    width: 30em;
+    height: 3em;
+    border-radius: 5px;
+    padding: 1.7em;
+    font: 18px Roboto-Light;
+    color: white;
+}
+
 input  {
     background-color: rgba(0, 5, 9, 0.85);
     border: none;

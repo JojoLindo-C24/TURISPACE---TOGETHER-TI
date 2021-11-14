@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
-
 import { Cadastro } from "./styled";
-
 import { IndexRodape } from "../../components/comum/rodape/index";
+
 import { useState } from "react";
 import { useHistory } from "react-router";
+
+import { Link } from "react-router-dom";
 
 import Api from '../../service/api'
 const api = new Api();
@@ -22,7 +22,6 @@ export default function Index() {
         if(t.erro){
             alert(`${t.erro}`);
         } else {
-            alert('Deu Certo!')
             navigation.push('/login')
         }
     }

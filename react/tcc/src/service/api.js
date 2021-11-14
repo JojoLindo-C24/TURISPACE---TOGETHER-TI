@@ -14,6 +14,11 @@ export default class Api {
         return r.data;
     }
 
+    async infoUsuario(nome, email, senha, celular) {
+        let r = await api.put('infoUsuario', {nome, email, senha, celular})
+        return r.data;
+    }
+
     async insert(nome, avaliacao, endereco, imagem, informacao, horarioFds, horarioDds, categoria) {
         let r = await api.post('/insert', { nome, avaliacao, endereco, imagem, informacao, horarioFds, horarioDds, categoria })
         return r.data;

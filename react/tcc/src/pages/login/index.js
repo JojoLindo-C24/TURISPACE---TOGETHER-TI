@@ -5,6 +5,8 @@ import {Login} from './styled'
 import { useState } from 'react'
 import { useHistory } from 'react-router'
 
+import Cookies from 'js-cookie'
+
 import Api from '../../service/api'
 const api = new Api();
 
@@ -19,7 +21,7 @@ export default function Index() {
         if(t.erro) {
             alert(`${t.erro}`)
         } else {
-            alert('Deu certuuuu')
+            Cookies.set('usuario-logado', JSON.stringify(t));
             navigation.push('/inicial')
         }
     }

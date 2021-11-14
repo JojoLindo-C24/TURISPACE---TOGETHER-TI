@@ -5,8 +5,17 @@ import CabecalhoInWhite from '../../components/comum/cabecalhoInWhite'
 import Rodape from '../../components/comum/rodape'
 import LugarInicial from "../../components/comum/lugarInicial"
 
+import Cookies from 'js-cookie'
+import { useHistory } from "react-router";
+
 export default function Home() {
     const [produtos, setProdutos] = useState([]);
+    
+    const navigation = useHistory();
+
+    let usuarioLogado = Cookies.get('usuario-logado');
+    if (usuarioLogado == null)
+      navigation.push('/');
 
     function listar() {
         const r = [
