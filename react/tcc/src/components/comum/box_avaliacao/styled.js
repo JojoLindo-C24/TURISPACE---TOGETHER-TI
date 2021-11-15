@@ -4,7 +4,7 @@ const BoxAvaliacao = styled.div`
  padding-top: 2em;
 .container{
     background: rgba(255, 255, 255, 0.85);
-    border-radius: 14px;
+    border-radius: 4px;
     justify-content: center;
     width:80%;
     height: 25em;
@@ -16,7 +16,7 @@ const BoxAvaliacao = styled.div`
 {
 	
 	background-color: #1C1C1C;
-	border-radius: 10px;
+	border-radius: 20px;
 }
 
 .container::-webkit-scrollbar
@@ -36,23 +36,22 @@ const BoxAvaliacao = styled.div`
 									   color-stop(0.96, rgb(28,58,148)));
 }
 
-.box{
+.chat{
     display: flex;
     padding: 1.4em 2.0em;
     
 }
 
-.box-mensagem{
+.chat-mensagem{
    
 }
 
 .data{
-    padding-left: 50em;
+    padding-left: 30em;
     font-size: 16px;
 }
 
 .tabela{
-  margin-top:-5%;
   align-items: center;
   display: flex;
   flex-direction: column;
