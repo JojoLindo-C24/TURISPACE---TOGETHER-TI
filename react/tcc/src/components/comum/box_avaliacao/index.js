@@ -1,80 +1,81 @@
 import {BoxAvaliacao} from "./styled";
+import Api from '../../../service/api';
+const api = new Api();
 
 
 export default function Index(){
-
-    // const [chat, setChat] = useState([]);
-    // const [msg, setMsg] = useState('')
-
-
+    
     return (
         <BoxAvaliacao>
             <div className="tabela">
-            <div className="container">
-                 <div className="box">
-                    <div className="box-mensagem">
-                        <div className= "nome">Joelma Marins do Santos</div>
-                        <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                <div className="container">
+                    <div className="chat">
+                        
+                        <div className="chat-mensagem">
+                            <div className= "nome">Joelma Marins do Santos</div>
+                            <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                        </div>
+                        <div className="data">24/09/2021</div>
+
+
                     </div>
-                    <div className="data">24/09/2021</div>
-                 </div>
-                 <div className="box">
-                    <div className="box-mensagem">
-                        <div className= "nome">Joelma Marins do Santos</div>
-                        <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                    {/* <div className="box">
+                        <div className="box-mensagem">
+                            <div className= "nome">Joelma Marins do Santos</div>
+                            <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                        </div>
+                        <div className="data">24/09/2021</div>
                     </div>
-                    <div className="data">24/09/2021</div>
-                 </div>
-                 <div className="box">
-                    <div className="box-mensagem">
-                        <div className= "nome">Joelma Marins do Santos</div>
-                        <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                    <div className="box">
+                        <div className="box-mensagem">
+                            <div className= "nome">Joelma Marins do Santos</div>
+                            <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                        </div>
+                        <div className="data">24/09/2021</div>
                     </div>
-                    <div className="data">24/09/2021</div>
-                 </div>
-                 <div className="box">
-                    <div className="box-mensagem">
-                        <div className= "nome">Joelma Marins do Santos</div>
-                        <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                    <div className="box">
+                        <div className="box-mensagem">
+                            <div className= "nome">Joelma Marins do Santos</div>
+                            <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                        </div>
+                        <div className="data">24/09/2021</div>
                     </div>
-                    <div className="data">24/09/2021</div>
-                 </div>
-                 <div className="box">
-                    <div className="box-mensagem">
-                        <div className= "nome">Joelma Marins do Santos</div>
-                        <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                    <div className="box">
+                        <div className="box-mensagem">
+                            <div className= "nome">Joelma Marins do Santos</div>
+                            <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                        </div>
+                        <div className="data">24/09/2021</div>
                     </div>
-                    <div className="data">24/09/2021</div>
-                 </div>
-                 <div className="box">
-                    <div className="box-mensagem">
-                        <div className= "nome">Joelma Marins do Santos</div>
-                        <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                    <div className="box">
+                        <div className="box-mensagem">
+                            <div className= "nome">Joelma Marins do Santos</div>
+                            <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                        </div>
+                        <div className="data">24/09/2021</div>
                     </div>
-                    <div className="data">24/09/2021</div>
-                 </div>
-                 <div className="box">
-                    <div className="box-mensagem">
-                        <div className= "nome">Joelma Marins do Santos</div>
-                        <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                    <div className="box">
+                        <div className="box-mensagem">
+                            <div className= "nome">Joelma Marins do Santos</div>
+                            <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                        </div>
+                        <div className="data">24/09/2021</div>
                     </div>
-                    <div className="data">24/09/2021</div>
-                 </div>
-                 <div className="box">
-                    <div className="box-mensagem">
-                        <div className= "nome">Joelma Marins do Santos</div>
-                        <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                    <div className="box">
+                        <div className="box-mensagem">
+                            <div className= "nome">Joelma Marins do Santos</div>
+                            <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                        </div>
+                        <div className="data">24/09/2021</div>
                     </div>
-                    <div className="data">24/09/2021</div>
-                 </div>
-                 <div className="box">
-                    <div className="box-mensagem">
-                        <div className= "nome">Joelma Marins do Santos</div>
-                        <div className="mensagem">Otimo atendimento, Parabéns!!</div>
-                    </div>
-                    <div className="data">24/09/2021</div>
-                 </div>
-            </div>
+                    <div className="box">
+                        <div className="box-mensagem">
+                            <div className= "nome">Joelma Marins do Santos</div>
+                            <div className="mensagem">Otimo atendimento, Parabéns!!</div>
+                        </div>
+                        <div className="data">24/09/2021</div>
+                    </div> */}
+                </div>
             </div>
         </BoxAvaliacao>
     )

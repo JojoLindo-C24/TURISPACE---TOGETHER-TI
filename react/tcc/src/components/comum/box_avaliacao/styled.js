@@ -36,13 +36,13 @@ const BoxAvaliacao = styled.div`
 									   color-stop(0.96, rgb(28,58,148)));
 }
 
-.box{
+.chat{
     display: flex;
     padding: 1.4em 2.0em;
     
 }
 
-.box-mensagem{
+.chat-mensagem{
    
 }
 
