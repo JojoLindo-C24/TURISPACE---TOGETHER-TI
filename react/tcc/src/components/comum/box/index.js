@@ -9,7 +9,7 @@ import { Container } from './styled.js';
 
 export default function CarrinhoItem(props) {
 
-  const [produto, setProduto] = useState(props.location.state);
+  const [produto] = useState(props.location.state);
 
   const [produto1, setProduto1] = useState(props.info)
 
