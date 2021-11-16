@@ -30,8 +30,13 @@ export default class Api {
         return r.data;
     }
 
-    async pacotesIncial() {
-        let r = await api.get('pacotesInicial', {});
+    async pacotesInicial(titulo, data, ingresso, preco, horario, cancelamento, endereco, acesso, imagem1, imagem2, imagem3, imagem4, link) {
+        let r = await api.get('/pacotesInicial', {titulo, data, ingresso, preco, horario, cancelamento, endereco, acesso, imagem1, imagem2, imagem3, imagem4, link});
+        return r.data;
+    }
+
+    async shoppingLugares(nome, avaliacao, endereco, imagem, informacao, horarioFds, horarioDds, categoria){
+        let r = await api.get('/shoppingLugares', {nome, avaliacao, endereco, imagem, informacao, horarioFds, horarioDds, categoria})
         return r.data;
     }
 

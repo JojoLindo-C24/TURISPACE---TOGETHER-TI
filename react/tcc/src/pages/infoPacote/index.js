@@ -64,7 +64,7 @@ export default function DetalhesPacote(props) {
             <div className="f1-container">
                 <CabecalhoInWhite/>
                 <div className="conteudo">
-                    <div className="TituloLugar">{produto.titulo}</div>
+                    <div className="TituloLugar">{produto.nm_pacote}</div>
                     {/* <Carousel 
                         responsive={CarouselConfig}
                         infinite={true}
@@ -76,7 +76,7 @@ export default function DetalhesPacote(props) {
                             key={item.id}
                             info={item} />
                         )} */}
-                        <img className="imagem1" src={produto.imagem1} alt="" />
+                        <img className="imagem1" src={produto.ds_imagem3} alt="" />
                     {/* </Carousel> */}
                     <div className="componentes">
                         <div className="tituloComponentes">INFORMAÇÕES DO PACOTE</div>
@@ -84,32 +84,32 @@ export default function DetalhesPacote(props) {
                             <div className="coluna1">
                                 <div className="content1">
                                     <img className="bonequinhos" src="/assets/images/bonequinhos.png" alt="" />
-                                    <div className="content">{produto.componentes}</div>
+                                    <div className="content">{produto.ds_ingresso}</div>
                                 </div>
                                 <div className="content1">
                                     <div className="content">Data</div>
-                                    <div className="content">{produto.data}</div>
+                                    <div className="content">{produto.dt_data}</div>
                                 </div>
                             </div>
                             <div className="coluna2">
                                 <div className="content1">
                                     <div className="content">Preço</div>
-                                    <div className="content">{produto.preco}</div>
+                                    <div className="content">{produto.vl_preco}</div>
                                 </div>
                                 <div className="content1">
                                     <div className="content">Horário</div>
-                                    <div className="content">{produto.horario}</div>
+                                    <div className="content">{produto.ds_horario}</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="titulo">ENDEREÇO</div>
-                    <div className="informacoes">{produto.endereco}</div>
+                    <div className="informacoes">{produto.ds_endereco}</div>
                     <div className="titulo">CANCELAMENTO</div>
-                    <div className="informacoes">{produto.cancelamento}</div>
+                    <div className="informacoes">{produto.ds_cancelamento}</div>
                     <div className="titulo">ACESSO</div>
-                    <div className="informacoes">{produto.acesso}</div>
-                    <div className="link">{produto.link}</div>
+                    <div className="informacoes">{produto.ds_acesso}</div>
+                    <div className="link">{produto.ds_link}</div>
                 </div>
                 <div className="botoes">
                     <BotaoVoltarInWhite/>

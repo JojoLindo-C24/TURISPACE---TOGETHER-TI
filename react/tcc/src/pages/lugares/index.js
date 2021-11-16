@@ -4,12 +4,17 @@ import Rodape from '../../components/comum/rodape';
 import Carousel from "react-multi-carousel";
 import Caixa from '../../components/comum/boxCarrosel'
 import "react-multi-carousel/lib/styles.css";
+import Componente from '../../components/comum/boxCarrosel1'
 
 import * as C from './styled.js';
 
+import Api from '../../service/api'
+const api = new Api();
+
 function Lugares() {
 
-  const[produtos, setProdutos] = useState([])
+  const[produtos, setProdutos] = useState([]);
+  const [shopping, setShopping] = useState([]);
 
   const responsive = {
     superLargeDesktop: {
@@ -29,6 +34,11 @@ function Lugares() {
       items: 1,
     },
   };
+
+  async function listarShoppings() {
+    let r = await api.shoppingLugares();
+    setShopping(r);
+  }
 
   function listar() {
     const r = [
@@ -209,6 +219,10 @@ function Lugares() {
   const adm = false;
 
   useEffect(() => {
+    listarShoppings();
+  }, [])
+
+  useEffect(() => {
     listar();
 }, [])
 
@@ -223,8 +237,8 @@ function Lugares() {
         <div className="box">
           <div className="Options"> <span> Shoppings </span> </div>
           <Carousel responsive={responsive} containerClass="carousel-box" >
-           {produtos.map(i => 
-              <Caixa item={i} adm={adm}/>
+           {shopping.map(i => 
+              <Componente item={i} adm={adm}/>
             )}
           </Carousel>
         </div>

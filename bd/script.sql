@@ -21,17 +21,17 @@ CREATE TABLE infoc_tht_pacote (
 	id_pacote 		               	INT primary key not NULL AUTO_INCREMENT,
 	nm_pacote						varchar(100),
 	dt_data							DATE,
-	ds_ingresso						varchar(10),
+	ds_ingresso						varchar(20),
 	vl_preco						varchar(30),
-	ds_horario						varchar(10),
-	ds_cancelamento   				varchar(255),
-	ds_endereco 	          		varchar(255),
-	ds_acesso 		              	varchar(255),
-	ds_imagem1          			varchar(255),
-	ds_imagem2 		           		varchar(255),
-	ds_imagem3		           		varchar(255),
-	ds_imagem4	           			varchar(255),
-	ds_link 		               	varchar(255)
+	ds_horario						varchar(20),
+	ds_cancelamento   				varchar(1255),
+	ds_endereco 	          		varchar(1255),
+	ds_acesso 		              	varchar(1255),
+	ds_imagem1          			varchar(1255),
+	ds_imagem2 		           		varchar(1255),
+	ds_imagem3		           		varchar(1255),
+	ds_imagem4	           			varchar(1255),
+	ds_link 		               	varchar(1255)
 )ENGINE=InnoDB;
 
 

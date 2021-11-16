@@ -6,6 +6,7 @@ import { useHistory } from "react-router";
 import { useState } from "react";
 
 export default function Pacotes(props) {
+    const [produto, setProduto] = useState(props.info);
 
     // const [produto, setProduto] = useState(props.location.state);
 
@@ -27,7 +28,7 @@ export default function Pacotes(props) {
     return(
         <Container>
             <div className="bloco">
-                <img className="imagem" src={props.info.imagem1} alt="" />
+                <img className="imagem" src={produto.ds_imagem1} alt="" />
                 {/* <img className="imagem" src={props.info.imagem2} alt="" />
                 <img className="imagem" src={props.info.imagem3} alt="" />
                 <img className="imagem" src={props.info.imagem4} alt="" />
@@ -36,13 +37,13 @@ export default function Pacotes(props) {
                     <div className="top-cont">   
                         <div className="linha-top-cont">
                             <div className="linha-cont"></div>
-                            <div className="titulo"> {props.info.titulo} </div>
+                            <div className="titulo"> {produto.nm_pacote} </div>
                         </div>
-                        <div className="componentes"> {props.info.componentes} </div>
+                        <div className="componentes"> {produto.ds_ingresso} </div>
                     </div>
                     <br></br>
                     <div className="middle-cont">
-                        <div className="preco"> {props.info.preco} </div>
+                        <div className="preco"> {produto.vl_preco} </div>
                         {/* <Link to={{
                             pathname: '/minhaSacola',
                             state: props.info
