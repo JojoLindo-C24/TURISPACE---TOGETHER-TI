@@ -1,20 +1,35 @@
 import React from 'react';
+import Cookies from 'js-cookie';
+
+import Contador from '../contador/index.js';
+
+import { useState } from 'react';
 
 import { Container } from './styled.js';
 
-function box(props) {
+export default function CarrinhoItem(props) {
+
+  const [produto, setProduto] = useState(props.location.state);
+
+  const [produto1, setProduto1] = useState(props.info)
+
+  function AlterarQtd(qtd) {
+    setProduto1({...produto1, qtd });
+
+    props.onUpdate(produto1.id, qtd)
+  }
+
+  function Remover() {
+    props.onRemove(produto1.id);
+  }
   return (
       <Container>
-          <div className="Titulo"> {props.titulo} </div>
-          <div className="Preco"> R$ {props.preco} {props.cada === true ? "(Cada)" : "(x2)"} </div>
+          <div className="Titulo"> {produto.titulo} </div>
+          <div className="Preco"> {produto.preco} </div>
           <div className="Number">  
-             <button onClick={props.adicionar}> + </button>
-                <div className="Valor"> {props.qtd} </div>
-             <button onClick={props.remover}> - </button>
-                <div className="Imagem"> <img src='/assets/images/lixeira.png' alt=''/> </div>
+            <Contador onChange={AlterarQtd} value={produto1.qtd} />
+            <button onClick={Remover} className="Imagem"> <img src='/assets/images/lixeira.png' alt=''/> </button>
           </div>
       </Container>
   )
 }
-
-export default box;

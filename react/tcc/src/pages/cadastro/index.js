@@ -1,6 +1,4 @@
 
-import LoadingBar from 'react-top-loading-bar'
-
 import { Cadastro } from "./styled";
 import { IndexRodape } from "../../components/comum/rodape/index";
 
@@ -22,11 +20,9 @@ export default function Index() {
     const loading = useRef(null);
 
     const cadastrar = async () => {
-        loading.current.continuousStart();
         let t = await api.cadastro(email, senha, celular, nome);
         if(t.erro){
             alert(`${t.erro}`);
-            loading.current.complete();
         } else {
             navigation.push('/login')
         }
@@ -34,7 +30,6 @@ export default function Index() {
 
     return(
         <Cadastro>
-            <LoadingBar color="#f11946" ref={loading}/>
             <div class="Container">
                 <div class="f1-container">
                     <div class="titulo"><img class="logo" src={"../../assets/images/Nome-Turispace.png"} alt=""/></div>

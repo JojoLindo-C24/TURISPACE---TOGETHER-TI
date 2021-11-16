@@ -24,6 +24,17 @@ export default class Api {
         return r.data;
     }
 
+
+    async inserirPacotes(titulo, data, ingresso, preco, horario, cancelamento, endereco, acesso, imagem1, imagem2, imagem3, imagem4, link){
+        let r = await api.post('/inserirPacotes', {titulo, data, ingresso, preco, horario, cancelamento, endereco, acesso, imagem1, imagem2, imagem3, imagem4, link});
+        return r.data;
+    }
+
+    async pacotesIncial() {
+        let r = await api.get('pacotesInicial', {});
+        return r.data;
+    }
+
     async listarMensagens(idMensagem) {
         let r = await api.get(`/chat/${idMensagem}`);
         return r.data;
