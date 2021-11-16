@@ -50,6 +50,12 @@ export default function Pacotes(props) {
                             {/* <button onClick={Comprar} className="bt-compra"> <img className="img-compra" src={"../../assets/images/compra.svg"} alt=""/> </button> */}
                         {/* </Link> */}
                     </div>
+                    <Link to={{
+                        pathname: '/infoPacote',
+                        state: props.info
+                    }}>
+                        <button className="mais-info"> Mais Informações </button>
+                    </Link>
                 </div>
             </div>
         </Container>
