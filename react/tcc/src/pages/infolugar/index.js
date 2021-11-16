@@ -18,25 +18,26 @@ function InfoLugar(props) {
         <CabecalhoInWhite/>
         <div className="Conteudo">
           <div className="esquerda">
-            <img className="img-lugares" src={lugares.imagem1} alt="" />
+            <img className="img-lugares" src={lugares.ds_imagem} alt="" />
             <div className="avaliacao">
               <div className="tittle">AVALIAÇÃO</div>
-              <div className="text"> {avaliacao} </div>
+              <div className="text"> {lugares.ds_avaliacao} </div>
             </div>
           </div>
           <div className="direita">
-            <div className="nome"><img class="Barrinha" src={"../../assets/images/barrinha.png"} alt=""/>{lugares.titulo}</div>
+            <div className="nome"><img class="Barrinha" src={"../../assets/images/barrinha.png"} alt=""/>{lugares.nm_lugar}</div>
             <div className="box">
               <div className="tittle">INFORMAÇÕES</div>
-              <div className="text">{lugares.descricao}</div>
+              <div className="text">{lugares.ds_informacao}</div>
             </div>
             <div className="box">
               <div className="tittle">HORÁRIO</div>
-              <div className="text">{lugares.horario}</div>
+              <div className="text">{lugares.ds_horario_dds}</div>
+              <div className="text">{lugares.ds_horario_fds}</div>
             </div>
             <div className="box">
               <div className="tittle">ENDEREÇO</div>
-              <div className="text">{lugares.endereco}</div>
+              <div className="text">{lugares.ds_endereco}</div>
             </div>
           </div>
         </div>
