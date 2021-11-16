@@ -1,6 +1,7 @@
 import { FaleConosco } from "./styled";
 import CabecalhoInWhite from '../../components/comum/cabecalhoInWhite';
 import { IndexRodape } from "../../components/comum/rodape/index";
+import Map from "../../components/comum/map/App"
 import Api from '../../service/api';
 
 
@@ -35,9 +36,12 @@ export default function Index() {
                </div>
                <div className= "conteudo">
                     <div className= "Parte1">
-                       
+
+                        
                         <div className= "cel"> +55 (11) 95247-9539</div>
                         <div className="email"> turiSPace@gmail.com </div>
+                        <Map></Map>                          
+                   
                     </div>
                     {/* <div className= "Parte2">
                         <div className= "label">Nome:</div>
@@ -49,8 +53,12 @@ export default function Index() {
                         </div>
                     </div> */}
                </div>
+               
             </div>
+            
             <IndexRodape></IndexRodape>
+
+          
         </FaleConosco>
         
     )

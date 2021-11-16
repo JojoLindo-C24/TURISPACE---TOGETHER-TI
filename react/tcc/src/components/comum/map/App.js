@@ -1,6 +1,6 @@
 import { Map, GoogleApiWrapper, Marker  } from 'google-maps-react';
 import React, { Component } from 'react';
-import './App.css';
+
 
 export class MapContainer extends Component {
 
@@ -9,7 +9,7 @@ export class MapContainer extends Component {
 
     this.state = {
       stores: [
-        { latitude: -23.6803333, longitude: 46.7079309, local: " São Paulo" },]
+        { latitude: -23.6803333, longitude: -46.7079925, local: "Instituto nossa senhira de Fatima" },]
     }
   }
 
@@ -26,17 +26,19 @@ export class MapContainer extends Component {
   render() {
     return (
 
-      
+     
+        <div style={{"position": "absolute", "width": "31%", "height": "55%"}}>
+            <Map
+              google={this.props.google}
+              zoom={17.5}
+              initialCenter={{ lat:-23.6803333, lng: -46.7079925}}
+            >
 
-      <Map
-        google={this.props.google}
-        zoom={17}
-        initialCenter={{ lat:-23.6803333, lng: -46.6388}}
-      >
-
-      {this.displayMarkers()}
-      </Map>
-
+            {this.displayMarkers()}
+            </Map>
+         </div>
+   
+        
     );
   }
 }

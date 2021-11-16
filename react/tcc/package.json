@@ -9,6 +9,7 @@
     "add": "^2.0.6",
     "axios": "^0.24.0",
     "google-maps": "^4.3.3",
+    "google-maps-react": "^2.0.6",
     "pigeon-maps": "^0.19.7",
     "pigeon-marker": "^0.3.4",
     "react": "^17.0.2",

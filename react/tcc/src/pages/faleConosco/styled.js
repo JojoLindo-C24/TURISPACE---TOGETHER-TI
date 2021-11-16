@@ -42,10 +42,10 @@ const FaleConosco =  styled.div`
     margin-bottom: 2em;
 }
 
-.mapa img{
-    height: 20em;
+map{
+    height: 2em;
     text-align: center;
-    width: 25em;
+    width: 2em;
 }
 
 .cel{
