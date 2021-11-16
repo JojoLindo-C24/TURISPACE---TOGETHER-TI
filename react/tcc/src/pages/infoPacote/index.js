@@ -4,6 +4,7 @@ import CabecalhoInWhite from '../../components/comum/cabecalhoInWhite';
 import {Container} from './styled';
 // import Cookies from 'js-cookie';
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 // import { useHistory } from 'react-router-dom';
 
 // import { CarouselConfig } from './config';
@@ -112,7 +113,14 @@ export default function DetalhesPacote(props) {
                 </div>
                 <div className="botoes">
                     <BotaoVoltarInWhite/>
-                    <BotaoCompraInWhite/>
+                    <Link to={{
+                        state: props.info,
+                        pathname: '/minhaSacola'
+                    }}>
+                        <button className="botao">
+                            <img src="/assets/images/compra.svg" className="imagem" alt="" />
+                        </button>
+                    </Link>
                 </div>
             </div>
         </Container>
