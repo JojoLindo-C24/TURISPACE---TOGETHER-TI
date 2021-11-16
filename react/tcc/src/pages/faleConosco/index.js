@@ -1,31 +1,31 @@
 import { FaleConosco } from "./styled";
 import CabecalhoInWhite from '../../components/comum/cabecalhoInWhite';
 import { IndexRodape } from "../../components/comum/rodape/index";
-import Map from "../../components/comum/map/App"
+import Map from "../../components/comum/map/App";
+import { useState } from "react";
 import Api from '../../service/api';
+const api=new Api();
 
 
 
 export default function Index() {
 
-    // const [nome, setNome] = useState([]);
-    // const [msg, setMsg] = useState('')
+    const [nome, setNome] = useState('');
+    const [msg, setMsg] = useState('')
 
-    // const enviarNome = async (event) => {
-    //     if (!(event && event.ctrlKey && event.charCode === 13))
-    //         return;
-    // }
-    // const enviarMensagem = async (event) => {
-    //     if (!(event && event.ctrlKey && event.charCode === 13))
-    //         return;
+    
+    const enviarMensagem = async (event) => {
+        if (!(event && event.ctrlKey && event.charCode === 13))
+            return;
 
-    //     const resp = await Api.inserirMensagem(msg);
-    //     // if (!validarResposta(resp)) 
-    //     //     return;
+        const resp = await Api.inserirMensagem(msg);
         
-    //     // // toast.dark('💕 Mensagem enviada com sucesso!');
-    //     // // await carregarMensagens();
-    // }
+        // if (!validarResposta(resp)) 
+        //     return;
+        
+        // alert ('💕 Mensagem enviada com sucesso!');
+       
+    }
 
     return(
         <FaleConosco>
@@ -43,15 +43,15 @@ export default function Index() {
                         <Map></Map>                          
                    
                     </div>
-                    {/* <div className= "Parte2">
+                    <div className= "Parte2">
                         <div className= "label">Nome:</div>
-                        <input value={nome} onChange={e => setNome(e.target.value)} onKeyPress={enviarNome} />
+                        <input value={nome} onChange={e => setNome(e.target.value)} />
                         <div className= "label"> Sua mensagem: </div>
-                        <textarea value={msg} onChange={e => setMsg(e.target.value)} onKeyPress={enviarMensagem}/>
+                        <textarea value={msg} onChange={e => setMsg(e.target.value)} />
                         <div className="botao">
                            <button onClick={enviarMensagem} className= "botao-enviar"> Enviar </button> 
                         </div>
-                    </div> */}
+                    </div>
                </div>
                
             </div>
