@@ -14,16 +14,19 @@ export default function Index() {
     const [msg, setMsg] = useState('')
 
     
-    const enviarMensagem = async (event) => {
-        if (!(event && event.ctrlKey && event.charCode === 13))
-            return;
-
-        const resp = await Api.inserirMensagem(msg);
-        
-        // if (!validarResposta(resp)) 
+    const enviarMensagem = async () => {
+        // if (!(event && event.ctrlKey && event.charCode === 13))
         //     return;
+
+        // const resp = await Api.inserirMensagem(msg);
         
-        // alert ('💕 Mensagem enviada com sucesso!');
+        let t = await api.inserirMensagem(nome, msg);
+        if(t.erro){
+            alert( 'Ocorreu um erro');
+        } else {
+           alert('Deu certo aleluia');
+        }
+        
        
     }
 
