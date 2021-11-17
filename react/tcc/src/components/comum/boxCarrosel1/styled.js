@@ -18,8 +18,9 @@ const Container = styled.div`
 
   .component-img{
     border-radius: 20px 0px 0px 20px;
-    height: 12em;
-    width: 12em;
+    height: 30vh;
+    width: 12vw;
+    object-fit: cover;
   }
 
   .edit img {

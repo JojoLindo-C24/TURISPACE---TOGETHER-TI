@@ -14,7 +14,7 @@ const api = new Api();
 function Lugares() {
 
   const[produtos, setProdutos] = useState([]);
-  const [shopping, setShopping] = useState([]);
+  const [lugar, setLugar] = useState([]);
 
   const responsive = {
     superLargeDesktop: {
@@ -35,10 +35,14 @@ function Lugares() {
     },
   };
 
-  async function listarShoppings() {
+  async function listarLugares() {
     let r = await api.shoppingLugares();
-    setShopping(r);
+    setLugar(r);
   }
+
+  let shopping = lugar.filter(p => p.ds_categoria === "shopping");
+  let parque = lugar.filter(p => p.ds_categoria === "parque");
+  let museu = lugar.filter(p => p.ds_categoria === "museu");
 
   function listar() {
     const r = [
@@ -219,7 +223,7 @@ function Lugares() {
   const adm = false;
 
   useEffect(() => {
-    listarShoppings();
+    listarLugares();
   }, [])
 
   useEffect(() => {
@@ -246,8 +250,8 @@ function Lugares() {
         <div className="box">
           <div className="Options"> <span> Parques </span> </div>
           <Carousel responsive={responsive} containerClass="carousel-box" >
-           {produtos.map(i => 
-              <Caixa item={i}/>
+           {parque.map(i => 
+              <Componente item={i}/>
             )}
           </Carousel>
         </div>
@@ -255,21 +259,21 @@ function Lugares() {
         <div className="box">
           <div className="Options"> <span> Museus </span> </div>
           <Carousel responsive={responsive} containerClass="carousel-box" >
-           {produtos.map(i => 
-              <Caixa item={i}/>
+           {museu.map(i => 
+              <Componente item={i}/>
             )}
           </Carousel>
         </div>
 
 
-        <div className="box">
+        {/* <div className="box">
           <div className="Options"> <span> Pontos Turísticos </span> </div>
           <Carousel responsive={responsive} containerClass="carousel-box" >
            {produtos.map(i => 
               <Caixa item={i}/>
             )}
           </Carousel>
-        </div>
+        </div> */}
       </div>
 
       <Rodape />

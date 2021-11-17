@@ -19,6 +19,7 @@ const Container = styled.div`
     width: 300px;
     height: 300px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 .nm-lugar{ 

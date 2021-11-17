@@ -27,7 +27,7 @@ export default function AdmInserir() {
     if(t.erro){
       alert(`${t.erro}`);
     } else{
-      alert('Deu Certo!')
+      alert('Deu Certo!');
     }
   }
 

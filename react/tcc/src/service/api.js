@@ -1,6 +1,6 @@
 import axios from 'axios'
 const api = axios.create({
-    baseURL: 'http://localhost:3030',
+    baseURL: 'https://turispaceheroku.herokuapp.com/',
 })
 
 export default class Api {
@@ -20,10 +20,9 @@ export default class Api {
     }
 
     async insert(nome, avaliacao, endereco, imagem, informacao, horarioFds, horarioDds, categoria) {
-        let r = await api.post('/insert', { nome, avaliacao, endereco, imagem, informacao, horarioFds, horarioDds, categoria })
+        let r = await api.post('/inserirLugares', { nome, avaliacao, endereco, imagem, informacao, horarioFds, horarioDds, categoria })
         return r.data;
     }
-
 
     async inserirPacotes(titulo, data, ingresso, preco, horario, cancelamento, endereco, acesso, imagem1, imagem2, imagem3, imagem4, link){
         let r = await api.post('/inserirPacotes', {titulo, data, ingresso, preco, horario, cancelamento, endereco, acesso, imagem1, imagem2, imagem3, imagem4, link});

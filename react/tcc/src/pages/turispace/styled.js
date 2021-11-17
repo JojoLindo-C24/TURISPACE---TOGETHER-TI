@@ -77,6 +77,8 @@ const Container = styled.div`
 
 .mais-lugares:hover{
     text-decoration: underline;
+    transform: scale(1.05);
+    transition: 0.6s;
 }
 `
 export {Container}
