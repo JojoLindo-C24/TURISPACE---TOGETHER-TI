@@ -1,4 +1,7 @@
 import { FaleConosco } from "./styled";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import CabecalhoInWhite from '../../components/comum/cabecalhoInWhite';
 import { IndexRodape } from "../../components/comum/rodape/index";
 import Map from "../../components/comum/map/App";
@@ -11,27 +14,30 @@ const api=new Api();
 export default function Index() {
 
     const [nome, setNome] = useState('');
-    const [msg, setMsg] = useState('')
+    const [msg, setMsg] = useState('');
 
     
     const enviarMensagem = async () => {
-        // if (!(event && event.ctrlKey && event.charCode === 13))
-        //     return;
-
-        // const resp = await Api.inserirMensagem(msg);
+        
         
         let t = await api.inserirMensagem(nome, msg);
+        
         if(t.erro){
-            alert( 'Ocorreu um erro');
+            toast( ' Mensagem não enviada');
         } else {
-           alert('Deu certo aleluia');
+            toast('💕 Mensagem enviada com sucesso!');
         }
+        
+        
+       
         
        
     }
 
     return(
         <FaleConosco>
+            <ToastContainer />
+            
             <CabecalhoInWhite></CabecalhoInWhite>
             <div className="Container">
                <div className= "Titulo"> 

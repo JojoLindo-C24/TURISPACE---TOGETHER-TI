@@ -39,8 +39,8 @@ export default class Api {
         return r.data;
     }
 
-    async listarMensagens(idMensagem) {
-        let r = await api.get(`/chat/${idMensagem}`);
+    async listarMensagens(nome, mensagem) {
+        let r = await api.get(`/chat`, {nome, mensagem});
         return r.data;
     }
 
