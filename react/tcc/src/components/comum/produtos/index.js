@@ -10,45 +10,41 @@ export default function Pacotes(props) {
 
     // const [produto, setProduto] = useState(props.location.state);
 
-    // const navigation = useHistory();
+    const navigation = useHistory();
 
-    // function Comprar () {
-    //     let carrinho = Cookies.get('carrinho');
-    //     carrinho = carrinho !== undefined
-    //             ? JSON.parse(carrinho)
-    //             : [];
+    function Comprar () {
+        let carrinho = Cookies.get('carrinho');
+        carrinho = carrinho !== undefined
+                ? JSON.parse(carrinho)
+                : [];
 
-    //     if(carrinho.some(item => item.id === produto.id) === false)
-    //        carrinho.push({...produto, qtd: 1});
+        if(carrinho.some(item => item.id === produto.id) === false)
+           carrinho.push({...produto, qtd: 1});
 
-    //     Cookies.set('carrinho', JSON.stringify(carrinho));
+        Cookies.set('carrinho', JSON.stringify(carrinho));
 
-    //     navigation.push('/minhaSacola')
-    // }
+        navigation.push('/minhaSacola')
+    }
     return(
         <Container>
             <div className="bloco">
-                <img className="imagem" src={produto.ds_imagem1} alt="" />
-                {/* <img className="imagem" src={props.info.imagem2} alt="" />
-                <img className="imagem" src={props.info.imagem3} alt="" />
-                <img className="imagem" src={props.info.imagem4} alt="" />
-                <img className="imagem" src={props.info.imagem5} alt="" /> */}
+                <img className="imagem" src={props.info.ds_imagem1} alt="" />
                 <div className="conteudo">
                     <div className="top-cont">   
                         <div className="linha-top-cont">
                             <div className="linha-cont"></div>
-                            <div className="titulo"> {produto.nm_pacote} </div>
+                            <div className="titulo"> {props.info.nm_pacote} </div>
                         </div>
-                        <div className="componentes"> {produto.ds_ingresso} </div>
+                        <div className="componentes"> {props.info.ds_ingresso} </div>
                     </div>
                     <br></br>
                     <div className="middle-cont">
-                        <div className="preco"> {produto.vl_preco} </div>
+                        <div className="preco"> {props.info.vl_preco} </div>
                         {/* <Link to={{
                             pathname: '/minhaSacola',
                             state: props.info
                         }}> */}
-                            {/* <button onClick={Comprar} className="bt-compra"> <img className="img-compra" src={"../../assets/images/compra.svg"} alt=""/> </button> */}
+                            <button onClick={Comprar} className="bt-compra"> <img className="img-compra" src={"../../assets/images/compra.svg"} alt=""/> </button>
                         {/* </Link> */}
                     </div>
                     <Link to={{

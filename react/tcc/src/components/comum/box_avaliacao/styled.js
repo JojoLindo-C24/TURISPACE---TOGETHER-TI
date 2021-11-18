@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 const BoxAvaliacao = styled.div`
- padding-top: 2em;
+ padding-top: 0.7em;
 .container{
     background: rgba(255, 255, 255, 0.85);
     border-radius: 4px;
     justify-content: center;
     width:80%;
-    height: 25em;
+    height: auto;
     overflow-y: auto;
     
 }

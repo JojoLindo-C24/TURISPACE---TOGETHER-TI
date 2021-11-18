@@ -46,6 +46,20 @@ export default function Home() {
         listarLugaresInicial();
     }, [])
 
+    // function Comprar () {
+    //     let carrinho = Cookies.get('carrinho');
+    //     carrinho = carrinho !== undefined
+    //             ? JSON.parse(carrinho)
+    //             : [];
+
+    //     if(carrinho.some(item => item.id === produto.id) === false)
+    //        carrinho.push({...produto, qtd: 1});
+
+    //     Cookies.set('carrinho', JSON.stringify(carrinho));
+
+    //     navigation.push('/minhaSacola')
+    // }
+
     return(
         <Container>
             <div className="container1">

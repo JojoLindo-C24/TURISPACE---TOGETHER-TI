@@ -9,25 +9,24 @@ import { Container } from './styled.js';
 
 export default function CarrinhoItem(props) {
 
-  const [produto] = useState(props.location.state);
-
-  const [produto1, setProduto1] = useState(props.info)
+  const [produto, setProduto] = useState(props.info);
 
   function AlterarQtd(qtd) {
-    setProduto1({...produto1, qtd });
+    setProduto({...produto, qtd });
 
-    props.onUpdate(produto1.id, qtd)
+    props.onUpdate(produto.id, qtd)
   }
 
   function Remover() {
-    props.onRemove(produto1.id);
+    props.onRemove(produto.id);
   }
+
   return (
       <Container>
-          <div className="Titulo"> {produto.titulo} </div>
-          <div className="Preco"> {produto.preco} </div>
-          <div className="Number">  
-            <Contador onChange={AlterarQtd} value={produto1.qtd} />
+          <div className="Titulo"> {produto.nm_pacote} </div>
+          <div className="Preco"> {produto.vl_preco} </div>
+          <div className="Number">
+            <Contador onChange={AlterarQtd} value={produto.qtd} />
             <button onClick={Remover} className="Imagem"> <img src='/assets/images/lixeira.png' alt=''/> </button>
           </div>
       </Container>

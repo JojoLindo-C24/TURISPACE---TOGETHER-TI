@@ -3,13 +3,14 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background-image: url(${'/assets/images/wallpaperflare6.png'});
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 
 .Container{
   height: 100%;
   align-items: center;
   display : flex;
   flex-direction: column;
+  padding: 4em;
 }
 
 .Conteudo{
