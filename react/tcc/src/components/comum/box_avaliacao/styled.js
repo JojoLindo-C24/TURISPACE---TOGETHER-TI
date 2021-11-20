@@ -12,28 +12,24 @@ const BoxAvaliacao = styled.div`
     
 }
 
-.container::-webkit-scrollbar-track
+.box-mensagem::-webkit-scrollbar-track
 {
-	
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: #1C1C1C;
 	border-radius: 20px;
 }
 
-.container::-webkit-scrollbar
+.box-mensagem::-webkit-scrollbar
 {
 	width: 10px;
 	background-color: #000000;
 }
 
-.container::-webkit-scrollbar-thumb
+.box-mensagem::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
-	background-image: -webkit-gradient(linear,
-									   left bottom,
-									   left top,
-									   color-stop(0.44, rgb(129,153,227)),
-									   color-stop(0.72, rgb(73,125,189)),
-									   color-stop(0.96, rgb(28,58,148)));
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #CBCBCB;
 }
 
 .chat{
@@ -42,10 +38,18 @@ const BoxAvaliacao = styled.div`
     
 }
 
-.chat-mensagem{
-   
-}
 
+.box{
+    display: flex;
+        flex-direction: column;
+        background: rgba(192, 65, 224, 0.19);
+        border-radius: 3px;
+
+        padding: 1.5em;
+        height: 100%;
+
+        overflow-y: auto;
+}
 .data{
     padding-left: 30em;
     font-size: 16px;
