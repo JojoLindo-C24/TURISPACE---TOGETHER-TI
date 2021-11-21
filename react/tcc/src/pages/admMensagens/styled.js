@@ -42,5 +42,18 @@ const AdmMensagens = styled.div`
     font-size:50px;
     padding: 0em 0.5em;
 }
+
+.box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 10px;
+        padding: 2.5em;
+        height: 68%;
+        width: 96%;
+        overflow-y: auto;
+}
 `
 export {AdmMensagens};

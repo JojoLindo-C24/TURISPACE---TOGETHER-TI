@@ -238,7 +238,8 @@ const app = express();
         try {
             let mensagens = await  
              db.infoc_tht_chat.findAll({ order: [['id_mensagem', 'desc' ]] });
-              
+             if (!mensagens.mensagem || mensagens.mensagem.replace(/\n/g, '') == '')
+            
             resp.send(mensagens);
         } catch (e) {
             resp.send(e.toString())

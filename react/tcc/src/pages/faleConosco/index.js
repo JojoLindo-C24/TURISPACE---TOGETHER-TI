@@ -16,16 +16,15 @@ export default function Index() {
     const [nome, setNome] = useState('');
     const [msg, setMsg] = useState('');
 
-    
+
     const enviarMensagem = async () => {
         
         
         let t = await api.inserirMensagem(nome, msg);
-        
         if(t.erro){
-            toast( ' Mensagem não enviada');
+            toast( '❌ Erro! Preencha os campos ');
         } else {
-            toast('💕 Mensagem enviada com sucesso!');
+            toast('💕 Mensagem enviada com sucesso! Obrigada');
         }
         
         
