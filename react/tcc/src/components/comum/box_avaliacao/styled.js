@@ -9,7 +9,7 @@ const BoxAvaliacao = styled.div`
         border-radius: 4px;
         padding: 0.7em;
         height: 100%;
-        overflow-y: auto;
+        
 }
 .nome {
     font-size: 20px;

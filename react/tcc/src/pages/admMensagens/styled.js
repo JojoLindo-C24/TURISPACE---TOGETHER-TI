@@ -50,9 +50,9 @@ const AdmMensagens = styled.div`
         justify-content: center;
         background: rgba(255, 255, 255, 0.85);
         border-radius: 10px;
-        padding: 2.5em;
-        height: 68%;
-        width: 96%;
+        padding: 1.5em;
+        height: 73%;
+        width: 100%;
         overflow-y: scroll ;
 }
 
