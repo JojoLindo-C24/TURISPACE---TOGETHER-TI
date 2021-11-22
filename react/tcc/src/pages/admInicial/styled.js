@@ -19,6 +19,7 @@ const Container = styled.div`
     color: #FFFFFF;
     font-size: 70px;
 }
+
 .conteudo{
     display:flex;
     flex-direction: column;
@@ -49,9 +50,22 @@ button {
     &:hover{
     transform: scale(1.2);
   }
-    
-}
+}   
 
+.botao-site {
+    color: blue;
+    border: 1px solid #1E90FF;
+    box-sizing: border-box;
+    border-radius: 10px; 
+    width: 8.8em;
+    height: 2.1em;
+    transition: all 1s;
+    cursor: pointer;
+    background-color: #DCDCDC ;
+    &:hover{
+    transform: scale(1.2);
+    }
+}
 `
 export {Container};
 

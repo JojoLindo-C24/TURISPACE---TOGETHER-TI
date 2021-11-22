@@ -7,7 +7,7 @@ const BoxAvaliacao = styled.div`
         flex-direction: column;
         background: rgba(255, 255, 255, 0.85);
         border-radius: 4px;
-        padding: 1.0em;
+        padding: 0.7em;
         height: 100%;
         overflow-y: auto;
 }

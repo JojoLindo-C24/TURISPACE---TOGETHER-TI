@@ -18,7 +18,7 @@ CREATE TABLE infoc_tht_chat (
 )ENGINE=InnoDB;
 
 
-CREATE TABLE infoc_tht_loginAdm (
+CREATE TABLE infoc_tht_loginadm (
 	id_loginAdm					int primary key not NULL AUTO_INCREMENT,
 	ds_emailAdm					varchar(50),
 	ds_senhaAdm					varchar(50)

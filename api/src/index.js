@@ -64,6 +64,58 @@ const app = express();
         });
 
 
+
+//LOGIN ADM 
+app.get('/loginAdm', async (req, resp) => {
+    try {
+        let loginAdm = await db.infoc_tht_loginadm.findAll({ order: [['id_loginAdm', 'desc' ]] });
+        resp.send(loginAdm);
+
+    } catch (e) {
+        resp.send({ erro: e.toString()})
+    }
+});
+
+
+// app.post('/loginAdm', async (req, resp) => {
+//     try {
+//         let LoginAdm = req.body;
+//         let h = await db.infoc_tht_loginadm.create
+//         ({
+//             ds_emailAdm: LoginAdm.emailAdm,
+//             ds_senhaAdm: LoginAdm.senhaAdm
+            
+//         })
+//         if(LoginAdm.emailAdm == null || LoginAdm.senhaAdm == null ){
+//             resp.send({ erro: "Há um campo não preechido"})
+//         } else {
+//         resp.send(h);
+//         }
+//     } catch (e) {
+//         resp.send(e.toString())
+//     }
+// })
+
+
+app.post('/loginAdm', async (req, resp) => {
+    
+    let loginAdm = req.body;
+
+    let t = await db.infoc_tht_loginadm.findOne(
+        {
+            where: {
+                ds_emailAdm: loginAdm.emailAdm,
+                ds_senhaAdm: loginAdm.senhaAdm
+            }
+        })
+
+    if (t == null)
+        return resp.send({ erro: 'Crendenciais Inválidas' });
+
+    resp.send(200);
+});
+
+
 // ALTERAÇÕES USUARIO
 
 

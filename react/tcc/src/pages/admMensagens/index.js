@@ -38,7 +38,7 @@ export default function Index(){
                 </div>
             </div>
          </div>
-        <BotaoVoltar></BotaoVoltar>
+       
     </AdmMensagens>
 )
 }

@@ -6,11 +6,17 @@ import { Link } from "react-router-dom";
 export default function InicialAdm() {
     return(
         <Container>
-            {/* <CabecalhoAdm> </CabecalhoAdm> */}
+            
             <div className="Container-i">
                 <div class="titulo"><img class="logo" src={"../../assets/images/Nome-Turispace.png"} alt=""/></div>
                 <div className="titulo"> Central do Administrador </div>
                 
+                    <Link to={{
+                        pathname: '/Inicial'
+                    }}>
+                        <button className='botao-site'> ENTRAR NO SITE </button>   
+                    </Link>
+                   
                 <div className="conteudo">
 
                     <div className="sobre"> Adicionar Lugares turistico
@@ -49,9 +55,12 @@ export default function InicialAdm() {
                     <Link to={{
                         pathname: '/gerenciamentoUsuario'
                     }}>
-                        <button className='botao-cabecalho'> GERENCIAMENTO DE CONTAS </button>   
+                        <button> GERENCIAMENTO DE CONTAS </button>   
                     </Link>
                     </div>
+
+
+                    
                 </div>
             </div>
         </Container>

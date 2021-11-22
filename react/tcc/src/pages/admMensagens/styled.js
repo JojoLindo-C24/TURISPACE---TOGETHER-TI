@@ -53,7 +53,27 @@ const AdmMensagens = styled.div`
         padding: 2.5em;
         height: 68%;
         width: 96%;
-        overflow-y: auto;
+        overflow-y: scroll ;
+}
+
+.box::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: white;
+}
+
+.box::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: blue;
+}
+
+.box::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: blue;
 }
 `
 export {AdmMensagens};

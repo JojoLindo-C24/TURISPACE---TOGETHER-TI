@@ -71,7 +71,7 @@ function CadastroAdm() {
               </div>
       </div>
     </div>
-    <BotaoVoltar/>
+    
     </C.Container>
   )
 };

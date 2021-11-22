@@ -14,7 +14,7 @@ export default function IndexCabecalhoAdm() {
                         <button className='botao-cabecalho'> VOLTAR PARA TELA INICIAL </button>   
                     </Link>
 
-                    <div class="Logo"> <img src={"../../assets/images/logo1.svg"} alt=""/> </div>
+                    {/* <div class="Logo"> <img src={"../../assets/images/logo1.svg"} alt=""/> </div> */}
                 </div>
             </div>
         </CabecalhoAdm>
