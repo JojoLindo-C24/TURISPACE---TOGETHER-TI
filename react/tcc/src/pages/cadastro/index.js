@@ -1,7 +1,6 @@
 
 import { Cadastro } from "./styled";
 import { IndexRodape } from "../../components/comum/rodape/index";
-
 import { useState, useRef } from "react";
 import { useHistory } from "react-router";
 
@@ -22,14 +21,17 @@ export default function Index() {
     const cadastrar = async () => {
         let t = await api.cadastro(email, senha, celular, nome);
         if(t.erro){
-            alert(`${t.erro}`);
-        } else {
-            navigation.push('/login')
+            alert(`${t.erro}`) 
+        } 
+        else {
+
+            navigation.push('/login');
         }
     }
 
     return(
         <Cadastro>
+             
             <div class="Container">
                 <div class="f1-container">
                     <div class="titulo"><img class="logo" src={"../../assets/images/Nome-Turispace.png"} alt=""/></div>
@@ -50,11 +52,9 @@ export default function Index() {
                             <input value={senha} onChange={e => setSenha(e.target.value)}  class="input-senha" type="password" placeholder="Insira sua senha"/>
                             <input value={celular} onChange={e => setCelular(e.target.value)}class="input-senha" type="text" placeholder="Insira seu celular"/>
                             <input value={nome} onChange={e => setNome(e.target.value)} class="input-senha" type="text" placeholder="Insira seu nome"/>
-                            {/* <Link to={{
-                                pathname: '/login'
-                            }}> */}
+                           
                                <button onClick={cadastrar} class="botao-cadastrar">Cadastrar</button>
-                            {/* </Link> */}
+                          
                             <Link to={{
                                 pathname: '/login'
                             }}>

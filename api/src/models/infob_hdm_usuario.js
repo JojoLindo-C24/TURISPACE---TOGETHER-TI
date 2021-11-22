@@ -29,6 +29,10 @@ export default class infob_hdm_usuario extends Model {
     ds_HDM_cogidoRec: {
       type: DataTypes.STRING(100),
       allowNull: true
+    },
+    ds_codigo: {
+      type: DataTypes.STRING(100),
+      allowNull: false
     }
   }, {
     sequelize,
@@ -41,27 +45,6 @@ export default class infob_hdm_usuario extends Model {
         using: "BTREE",
         fields: [
           { name: "id_HDM_usuario" },
-        ]
-      },
-      {
-        name: "nm_HDM_nome",
-        using: "BTREE",
-        fields: [
-          { name: "nm_HDM_nome" },
-        ]
-      },
-      {
-        name: "nm_HDM_email",
-        using: "BTREE",
-        fields: [
-          { name: "nm_HDM_email" },
-        ]
-      },
-      {
-        name: "ds_HDM_senha",
-        using: "BTREE",
-        fields: [
-          { name: "ds_HDM_senha" },
         ]
       },
     ]

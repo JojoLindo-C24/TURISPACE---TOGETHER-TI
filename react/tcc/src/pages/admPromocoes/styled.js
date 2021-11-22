@@ -9,13 +9,16 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
 
+
 .container1{
+   
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background-image: url(${BackgroundInitial});
   align-items: center;
   background-size: cover;
+  
 }
 
 .lista-produtos {
@@ -39,12 +42,14 @@ const Container = styled.div`
 }
 
 .Turispace-promocoes{
+   
     font: 40px Montserrat-SemiBold;
     color: white;
     background-color: rgba(0, 5, 32, 0.85);
     width: 100vw;
     padding: 1em 0em 1em 0em;
     text-align: center;
+   
 }
 
 .container2{

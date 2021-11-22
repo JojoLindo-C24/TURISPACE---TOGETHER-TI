@@ -14,6 +14,12 @@ export default class Api {
         return r.data;
     }
 
+
+    async loginAdm(emailAdm, senhaAdm) {
+        let r = await api.post('/loginAdm', { emailAdm, senhaAdm })
+        return r.data;
+    }
+
     async infoUsuario(nome, email, senha, celular) {
         let r = await api.put('infoUsuario', {nome, email, senha, celular})
         return r.data;

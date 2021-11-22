@@ -12,19 +12,15 @@ export default function Index(props){
 
     return (
         <BoxAvaliacao>
-            <div className="tabela">
-                <div className="container">
-                    <div className="chat">
-                        <div className="box">
-                            <div className="box-mensagem">
-                                <div className= "nome">{props.itemMsg.nm_nome}</div>
-                                <div className="mensagem">{props.itemMsg.ds_mensagem}</div>
-                            </div>
-                            <div className="data">{props.itemMsg.dt_mensagem}</div>
+    
+                    <div className="box-2">
+                        <div className="box-mensagem">
+                            <div className= "nome">{props.itemMsg.nm_nome}</div>
+                            <div className="mensagem">{props.itemMsg.ds_mensagem}</div>
                         </div>
+                        <div className="data">{props.itemMsg.dt_mensagem}</div>
                     </div>
-                </div>
-            </div>
+          
         </BoxAvaliacao>
     )
 }

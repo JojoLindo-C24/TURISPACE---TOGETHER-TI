@@ -29,15 +29,16 @@ export default function Index(){
                     <div className="barrinha"> <img class="Barrinha" src={"../../assets/images/barrinha.png"} alt=""/> </div>
                     <div className="nomeAvaliacao">Avaliações do Site </div>
                 </div>
-                {/* <BoxAvaliacao></BoxAvaliacao> */}
-                {mensagem.map(item => 
-                    <BoxAvaliacao 
-                    key={item.id_mensagem}
-                    itemMsg={item} />
-                )}
+                <div className= "box">
+                    {mensagem.map(item => 
+                        <BoxAvaliacao 
+                        key={item.id_mensagem}
+                        itemMsg={item} />
+                    )}
+                </div>
             </div>
          </div>
-        <BotaoVoltar></BotaoVoltar>
+       
     </AdmMensagens>
 )
 }

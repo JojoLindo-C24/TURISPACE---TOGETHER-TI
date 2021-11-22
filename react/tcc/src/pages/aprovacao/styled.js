@@ -140,7 +140,7 @@ img {
 }
 
 
-button{
+.liberar{
     background: rgba(0, 5, 9, 0.65);
     border-radius: 7px;
     width: 7em;

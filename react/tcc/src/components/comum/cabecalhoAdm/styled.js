@@ -15,7 +15,7 @@ const CabecalhoAdm = styled.div`
 .botao-cabecalho{
     border: none;
     background-color: transparent;
-    font: 15px Montserrat-Medium;
+    font: 30px Montserrat-Medium;
     cursor: pointer;
     color: white;
 }

@@ -42,5 +42,38 @@ const AdmMensagens = styled.div`
     font-size:50px;
     padding: 0em 0.5em;
 }
+
+.box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 10px;
+        padding: 1.5em;
+        height: 73%;
+        width: 100%;
+        overflow-y: scroll ;
+}
+
+.box::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: white;
+}
+
+.box::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: blue;
+}
+
+.box::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: blue;
+}
 `
 export {AdmMensagens};
