@@ -42,7 +42,6 @@ function MinhaSacola() {
       let carrinho = produtos.filter(item => item.id_produto !== id);
       Cookies.set('carrinho', JSON.stringify(carrinho));
       setProdutos([...carrinho]);
-      
   }
 
   const navigation = useHistory();

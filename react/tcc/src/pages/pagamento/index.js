@@ -2,10 +2,44 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CabecalhoInWhite from '../../components/comum/cabecalhoInWhite'
 import BotaoVoltar from '../../components/comum/botaoVoltar'
+import ItemPgto from '../../components/comum/itemPgto';
+import { useHistory } from 'react-router';
+import { useState, useEffect } from 'react';
+import Cookies from 'js-cookie';
 
 import * as C from './styled.js';
 
+function lerUsuarioLogado(navigation) {
+  let logado = Cookies.get('usuario-logado')
+  if (logado === null)
+      navigation.push('/login');
+
+  let usuarioLogado = JSON.parse(logado);
+  return usuarioLogado;
+}
+
 function Pagamento() {
+
+  const navigation = useHistory();
+  const [produtos, setProdutos] = useState([]);
+  let usuarioLogado = lerUsuarioLogado(navigation);
+
+
+  function listarCarrinho() {
+
+    let carrinho = Cookies.get('carrinho');
+    carrinho = carrinho !== undefined
+                ? JSON.parse(carrinho)
+                : [];
+
+    setProdutos(carrinho);
+
+}
+
+  useEffect(() => {
+    listarCarrinho();
+  }, [])
+
   return(
     <C.Container> 
       <div className="f1-container">
@@ -26,11 +60,14 @@ function Pagamento() {
               </div>
               <div className="Container-2"> 
                 <div className="me-bag"> Meus Itens</div>
-                  <div className="Tudo"> 
-                    <div className="Ingressos"> <span> Ingressos <br/> para Hopi <br/> Hari </span> <span> R$ <br/> 110,00 <br/> (x2) </span> </div>
-                    <div className="Lixeira"> <img class="Lixeira" src={"../../assets/images/lixeira.png"} alt=""/> </div>
-                    <div className="Ingressos"> <span> Ingressos <br/> para Hopi <br/> Hari </span> <span> R$ <br/> 110,00 <br/> (x2) </span> </div>
-                    <div className="Lixeira"> <img class="Lixeira" src={"../../assets/images/lixeira.png"} alt=""/> </div>
+                  <div className="Tudo">
+                  {produtos.map(item => 
+                    <ItemPgto key={item.id_pacote}
+                      itemPgto={item}
+                      // onUpdate={alterar}
+                      // onRemove={remover} 
+                    />
+                  )} 
                   </div>
                 </div>
               </div>

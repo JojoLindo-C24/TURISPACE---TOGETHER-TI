@@ -224,10 +224,11 @@ export const Container = styled.div`
  .Tudo{
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 14vw;
   margin-top: 1em;  
   background: rgba(255, 255, 255, 0.85);
   border-radius: 15px;
+  padding: 0.6em;
 
  }
 
