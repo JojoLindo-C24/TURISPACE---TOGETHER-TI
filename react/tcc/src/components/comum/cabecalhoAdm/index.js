@@ -11,34 +11,10 @@ export default function IndexCabecalhoAdm() {
                     <Link to={{
                         pathname: '/inicialAdm'
                     }}>
-                        <button className='botao-cabecalho'> INICIAL </button>   
+                        <button className='botao-cabecalho'> VOLTAR PARA TELA INICIAL </button>   
                     </Link>
-                    <Link to={{
-                        pathname: '/promocoes'
-                    }}>
-                        <button className='botao-cabecalho'> PROMOÇÕES E TURISMO </button>   
-                    </Link>
-                    <Link to={{
-                        pathname: '/lugaresAdm'
-                    }}>
-                        <button className='botao-cabecalho'> LUGARES </button>   
-                    </Link>
-                    <Link to={{
-                        pathname: '/admMensagens'
-                    }}>
-                        <button className='botao-cabecalho'> FALE CONOSCO </button>   
-                    </Link>
-                    <Link to={{
-                        pathname: '/aprovacao'
-                    }}>
-                        <button className='botao-cabecalho'> APROV. COMPRA </button>   
-                    </Link>
-                    <Link to={{
-                        pathname: '/gerenciamentoUsuario'
-                    }}>
-                        <button className='botao-cabecalho'> GEREN. CONTAS </button>   
-                    </Link>
-                    <div class="Conta"> <img src={"../../assets/images/usuario1.svg"} alt=""/> </div>
+
+                    <div class="Logo"> <img src={"../../assets/images/logo1.svg"} alt=""/> </div>
                 </div>
             </div>
         </CabecalhoAdm>

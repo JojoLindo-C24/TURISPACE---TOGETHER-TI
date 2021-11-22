@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 
 import {Login} from './styled'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react'
 import { useHistory } from 'react-router'
 
@@ -19,7 +20,7 @@ export default function Index() {
     const logar = async () => {
         let t = await api.login(email, senha);
         if(t.erro) {
-            alert(`${t.erro}`)
+            toast(`${t.erro}`)
         } else {
             Cookies.set('usuario-logado', JSON.stringify(t));
             navigation.push('/inicial')
@@ -28,6 +29,8 @@ export default function Index() {
 
     return(
             <Login>
+                 <ToastContainer />
+            
                 <div class="f1-container">
                     <div class="conteudo">
                         <div className="f1-conteudo">

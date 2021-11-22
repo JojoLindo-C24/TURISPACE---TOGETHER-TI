@@ -216,7 +216,7 @@ const app = express();
             return resp.send({ erro: 'Nome é obrigatória!' });
 
             if (!chat.mensagem || chat.mensagem.replace(/\n/g, '') == '')
-                return resp.send({ erro: 'Mensagem é obrigatória!' });
+            return resp.send({ erro: 'Mensagem é obrigatória!' });
             
             
             let mensagem = {

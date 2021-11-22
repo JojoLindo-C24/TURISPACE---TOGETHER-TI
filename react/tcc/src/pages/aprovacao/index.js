@@ -1,6 +1,6 @@
 import React from 'react';
 import CabecalhoAdm from '../../components/comum/cabecalhoAdm';
-import BotaoVoltar from '../../components/comum/botaoVoltar';
+
 
 import * as C from './styled.js';
 
@@ -36,7 +36,7 @@ function AprovacaoCompra() {
                             <td> Joelma Marins do Santos </td>
                             <td>  R$ 110,0 </td>
                             <td> Pago </td>
-                            <td><button>Liberar</button></td>
+                            <td><button className="liberar">Liberar</button></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -52,7 +52,7 @@ function AprovacaoCompra() {
                         <td> Joelma Marins do Santos </td>
                             <td>  R$ 110,0 </td>
                             <td> Pago </td>
-                            <td><button>Liberar</button></td>
+                            <td><button className="liberar">Liberar</button></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -68,7 +68,7 @@ function AprovacaoCompra() {
                         <td> Joelma Marins do Santos </td>
                             <td>  R$ 110,0 </td>
                             <td> Pago </td>
-                            <td><button>Liberar</button></td>
+                            <td><button className="liberar">Liberar</button></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -83,7 +83,7 @@ function AprovacaoCompra() {
               </div>
       </div>
     </div>
-    <BotaoVoltar/>
+    
     </C.Container>
   )
 };

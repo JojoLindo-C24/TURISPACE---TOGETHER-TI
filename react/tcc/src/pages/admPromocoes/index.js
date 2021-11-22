@@ -164,8 +164,8 @@ export default function AdmPromocoes() {
         <Container>
             <div className="container1">
               <CabecalhoInWhite></CabecalhoInWhite>
-              <img className="Turispace" src={"../../assets/images/Turispace 1.png"} alt=""/>
-              <div className="Turispace-subtitulo">Compre já seu pacote, e deixe suas férias garantidas</div>
+              {/* <img className="Turispace" src={"../../assets/images/Turispace 1.png"} alt=""/>
+              <div className="Turispace-subtitulo">Compre já seu pacote, e deixe suas férias garantidas</div> */}
               <div className="Turispace-promocoes">Promoções da Temporada</div>
               <div className="lista-produtos">
                   {produtos.map(item => 
@@ -175,7 +175,7 @@ export default function AdmPromocoes() {
                       )}
               </div>
             </div>
-            <div className="container2">
+            {/* <div className="container2">
               <div className="Turispace-promocoes">Turismo em São Paulo</div>
               <div className="lugaresInicial">
                 {produtos1.map(item => 
@@ -186,7 +186,7 @@ export default function AdmPromocoes() {
               </div>
               <a href="/lugares" className="mais-lugares">Ver Mais Lugares</a>
               <Rodape></Rodape>
-            </div>
+            </div> */}
         </Container>
     )
 }

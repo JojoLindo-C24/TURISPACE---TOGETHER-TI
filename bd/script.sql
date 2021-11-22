@@ -17,6 +17,13 @@ CREATE TABLE infoc_tht_chat (
 	dt_mensagem 	        		 DATETIME
 )ENGINE=InnoDB;
 
+
+CREATE TABLE infoc_tht_loginAdm (
+	id_loginAdm					int primary key not NULL AUTO_INCREMENT,
+	ds_emailAdm					varchar(50),
+	ds_senhaAdm					varchar(50)
+)ENGINE=InnoDB;
+
 CREATE TABLE infoc_tht_pacote (
 	id_pacote 		               	INT primary key not NULL AUTO_INCREMENT,
 	nm_pacote						varchar(100),
