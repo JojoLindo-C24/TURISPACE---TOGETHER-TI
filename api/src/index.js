@@ -289,7 +289,7 @@ app.post('/loginAdm', async (req, resp) => {
     app.get('/chat', async (req, resp) => {
         try {
             let mensagens = await  
-             db.infoc_tht_chat.findAll({ order: [['id_mensagem', 'asc' ]] });
+             db.infoc_tht_chat.findAll({ order: [['id_mensagem', 'desc' ]] });
              if (!mensagens.mensagem || mensagens.mensagem.replace(/\n/g, '') == '')
             
             resp.send(mensagens);
